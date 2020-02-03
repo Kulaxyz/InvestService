@@ -1,0 +1,191 @@
+/*******************************************************************************************/
+/* this is a style-block from stripe-card-page */
+
+.StripeElement, #cardholder-name
+{
+  display: block;
+  box-sizing: border-box;
+  width: 355px;
+  padding: 15px 58px 15px 15px;
+  margin: 10px auto;
+  border: 1px solid #777;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus
+{
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid
+{
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill
+{
+  background-color: #fefde5 !important;
+}
+
+#stripe_submit_button
+{
+    width: 355px;
+    margin: 0px auto;
+    padding: 10px;
+    background: white;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 7px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#stripe_submit_button:hover
+{
+    background: green;
+    #color: black;
+    transition: 0.2s;
+}
+
+/*******************************************************************************************/
+/* this is a style-block from apple-page */
+
+#payment-request-button
+{
+    #display: none;
+    width: 100%;
+    height: 40px;
+    margin: 0px auto;
+    #padding: 10px;
+    background: transparent;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#payment-request-button:hover
+{
+    #background: green;
+    #color: black;
+    #transition: 0.2s;
+}
+
+.apple_alert_container
+{position: relative;}
+
+div.apple_alert
+{
+    #display: none;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 15px 15px 15px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: #39298e;
+    color: white;
+    font-size: 14pt;
+    line-height: 30px;
+    cursor: default;
+    opacity: 1;
+    transition: 2s;
+}
+
+div.go_home
+{
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+#go_home_button
+{
+    width: 100%;
+    margin: 0px auto;
+    padding: 7px;
+    background: white;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 7px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#go_home_button:hover
+{
+    background: #39298e;
+    color: white;
+    transition: 0.2s;
+}
+
+/*******************************************************************************************/
+/* this is a style-block for a loader-element */
+.page_preloader
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    z-index: 950;
+}
+
+.page_loader
+{
+    width: 75px;
+    height: 75px;
+    border: 10px solid #39298e;
+    border-radius: 50%;
+    border-top-color: cornflowerblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1.5s spin infinite linear;
+}
+
+.apple_page_loader
+{
+    width: 40px;
+    height: 40px;
+    border: 5px solid #39298e;
+    border-radius: 50%;
+    border-top-color: orange;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1.5s spin infinite linear;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.loaded
+{
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: 1s.
+}
+
+@keyframes spin
+{
+    from{transform: translate(-50%, -50%) rotate(0deg);}
+    to{transform: translate(-50%, -50%)rotate(360deg);}
+}
+
+.test_div{display: none;}
