@@ -18,6 +18,9 @@ Auth::routes();
 
 Route::get('/', 'PublicController@index')->name('index')->middleware('referral');
 Route::get('article/{slug}', 'ArticleController@article')->name('article');
+Route::get('blog', 'PublicController@blog')->name('blog');
+Route::get('faq', 'PublicController@faq')->name('faq');
+Route::get('about', 'PublicController@about')->name('about');
 
 Route::view('/reviews', 'reviews')->name('reviews');
 Route::view('/rules', 'rules')->name('rules');

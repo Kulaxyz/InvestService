@@ -12,4 +12,9 @@ class ArticleController extends Controller
         $article = Article::with(['category', 'tags'])->where('slug', $slug)->first();
         return view('article', compact('article'));
     }
+
+    public function blog()
+    {
+
+    }
 }

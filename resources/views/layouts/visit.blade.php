@@ -1,60 +1,23 @@
-<header class="header">
-    <div class="header__top">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 d-lg-flex justify-start align-self-lg-stretch text-left d-none d-lg-block">
-                    <div class="brick">
-                        <a href="mailto:info@ftf.ai">
-                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0)">
-                                    <path
-                                        d="M15.5988 5.66995L10.6643 0.42701C10.1302 -0.140465 9.26113 -0.140465 8.72703 0.42701L1.02622 8.60916C0.759188 8.89291 0.625656 9.26562 0.625656 9.63832C0.625656 10.011 0.759188 10.3837 1.02622 10.6675L2.26431 11.983L0.904844 13.4274C0.843813 13.4922 0.813312 13.5772 0.813312 13.6622C0.813312 13.7471 0.843813 13.8321 0.904844 13.897C1.02688 14.0266 1.22475 14.0266 1.34678 13.897L2.70625 12.4525L3.27247 13.0542L0.0915312 16.4339C0.0305 16.4988 0 16.5838 0 16.6687C0 16.7537 0.0305 16.8387 0.0915312 16.9035C0.213562 17.0332 0.411438 17.0332 0.5335 16.9035L3.71447 13.5237L5.96072 15.9104C6.49484 16.4778 7.36387 16.4778 7.89797 15.9104L15.5988 7.72824C15.8575 7.45339 16 7.08786 16 6.69911C16 6.31034 15.8575 5.94484 15.5988 5.66995ZM6.70228 15.6342C6.59266 15.5971 6.48944 15.5331 6.40263 15.4408L1.46816 10.1979C1.27344 9.99101 1.20994 9.69726 1.27634 9.43306H6.70228V15.6342ZM5.57269 8.769L6.49934 7.78442C6.62138 7.65477 6.62141 7.44452 6.49934 7.31487C6.37728 7.18521 6.17944 7.18517 6.05741 7.31487L4.68878 8.769H3.77831L6.6035 5.76723C6.7255 5.63758 6.72553 5.42733 6.6035 5.29764C6.48147 5.16798 6.28359 5.16798 6.16153 5.29764L2.89444 8.769H1.75969L8.87747 1.20632V7.9776C8.87747 8.41399 8.54334 8.769 8.13262 8.769H5.57269ZM15.1569 7.25872L7.45603 15.4408C7.41631 15.483 7.37294 15.5189 7.32731 15.5496V9.43306H8.13266C8.88797 9.43306 9.5025 8.78015 9.5025 7.9776V7.12192H13.0845L11.2762 9.04332C11.2152 9.10813 11.1846 9.19313 11.1846 9.2781C11.1846 9.3631 11.2151 9.44803 11.2762 9.51288C11.3982 9.64254 11.5961 9.64254 11.7181 9.51288L13.9682 7.12219C13.9683 7.12212 13.9683 7.12202 13.9684 7.12196H15.2599C15.2307 7.17086 15.1964 7.21678 15.1569 7.25872ZM9.50247 6.45786V0.692801C9.75116 0.622244 10.0276 0.689713 10.2223 0.896602L15.1568 6.13951C15.2422 6.23019 15.3041 6.33906 15.3398 6.45786H9.50247Z"
-                                        fill="white" />
-                                    <path
-                                        d="M7.36843 4.4841C7.3103 4.42201 7.22968 4.38681 7.14749 4.38681C7.06499 4.38681 6.98468 4.42201 6.92655 4.4841C6.86843 4.54585 6.83499 4.63119 6.83499 4.71884C6.83499 4.80617 6.86843 4.89183 6.92655 4.95359C6.98468 5.01535 7.06499 5.05087 7.14749 5.05087C7.22968 5.05087 7.3103 5.01535 7.36843 4.95359C7.42655 4.89183 7.45999 4.80617 7.45999 4.71884C7.45999 4.63119 7.42655 4.54585 7.36843 4.4841Z"
-                                        fill="white" />
-                                    <path
-                                        d="M0.534719 14.289C0.476594 14.2272 0.395969 14.1917 0.313782 14.1917C0.231594 14.1917 0.150969 14.2272 0.0928443 14.289C0.0347192 14.3507 0.00128174 14.4364 0.00128174 14.5237C0.00128174 14.611 0.0347192 14.6967 0.0928443 14.7585C0.150969 14.8202 0.231594 14.8557 0.313782 14.8557C0.396282 14.8557 0.476594 14.8202 0.534719 14.7585C0.593157 14.6967 0.626282 14.611 0.626282 14.5237C0.626282 14.4364 0.593157 14.3507 0.534719 14.289Z"
-                                        fill="white" />
-                                    <path
-                                        d="M3.96932 14.9247C3.84726 14.795 3.64938 14.795 3.52735 14.9247L2.1081 16.4327C2.0471 16.4975 2.01657 16.5825 2.01657 16.6674C2.01657 16.7524 2.04707 16.8374 2.1081 16.9022C2.23016 17.0319 2.42804 17.0319 2.55007 16.9022L3.96932 15.3943C4.09132 15.2646 4.09132 15.0544 3.96932 14.9247Z"
-                                        fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0">
-                                        <rect width="16" height="17" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
+<!DOCTYPE html>
+<html lang="eng">
 
-                            info@ftf.ai</a>
-                    </div>
-                    <div class="brick-l">
-                        <a target="_blank" href="https://www.facebook.com/FTFai/" id="fb"><i class="fab fa-facebook"></i></a>
-                    </div>
-                    <div class="brick-l">
-                        <a target="_blank" href="https://t.me/ftf_ai" id="tg"><i class="fab fa-telegram-plane"></i></a>
-                    </div>
-                    <div class="brick-l">
-                        <a target="_blank" href="https://www.youtube.com/channel/UCYuzxaAGTWlNA3wqFeLiJzQ" id="yt"><i
-                                class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-6 align-self-lg-stretch text-left text-lg-right d-none d-lg-block">
-                    <button class="header__top-btn" data-toggle="modal" data-target="#myModal"><i
-                            class="fas fa-calculator"></i>PROFIT CALCULATOR</button>
-                    <a href="#"><i class="far fa-user"></i>YOU PERSONAL ACCOUNT</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header__nav">
-        <div class="container-fluid">
+@component('components.head')
+@endcomponent
+<style>
+    .header__nav.fixed a {
+        color: #FFFFFF;
+    }
+</style>
+
+<body class="mainPage" style="background-color: aliceblue">
+<header class="header" style="height: 100px !important;">
+    <div class="header__nav fixed">
+        <div class="container-fluid" style="background-color: black">
             <div class="row">
 
                 <!-- pc -->
                 <div class="col-lg-2 align-self-lg-center d-none d-lg-none d-xl-block ml-10">
-                    <a href="#">
+                    <a href={{ route('index') }}>
                         <div class="logo"></div>
                     </a>
                 </div>
@@ -99,7 +62,7 @@
                                 </script>
                             </div>
                             <div class="aside__navigation">
-                                <a href="#">
+                                <a href={{ route('index') }}>
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0)">
                                             <path
@@ -164,6 +127,7 @@
                                         </svg>
 
                                         ABOUT US</p>
+
                                 </div>
                                 <a href="#bigSection">
                                     <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -435,57 +399,17 @@
             </div>
         </div>
     </div>
-    <div class="header__slider">
-        <div>
-            <div class="slider__item">
-                <div class="header__image">
-                    <img src="/img/header__img1.jpg" alt="">
-                </div>
-                <div class="slider__content text-center">
-                    <h1 class="title wow fadeInDown">At FTF, we invest in promising startups and Blockchain Technologies </h1>
-                    <p class="subtitle">This is our main passion, but not our only Focus. Our company operates in many different
-                        IT industries</p>
-                    <div class="buttons">
-                        <button class="btn header__btn header__btn-start" onclick="location.href='{{ route('login') }}'">Invest</button>
-                        <button class="btn header__btn" onclick="location.href='{{ route('about') }}'">Read more</button>
-                        <button class="btn header__btn" data-toggle="modal" data-target="#myModal">Profit calculator</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="slider__item">
-                <div class="header__image">
-                    <img src="/img/header__img2.jpg" alt="">
-                </div>
-                <div class="slider__content text-center">
-                    <h1 class="title">Earnings without risks. Revenue of up to 37.5% in one month.</h1>
-                    <p class="subtitle">We focus only on profit-driven Technologies, allowing our Backers to receive huge
-                        returns from their Investments.</p>
-                    <div class="buttons">
-                        <button class="btn header__btn header__btn-start" onclick="location.href='{{ route('login') }}'">Invest</button>
-                        <button class="btn header__btn" onclick="location.href='{{ route('about') }}'">Read more</button>
-                        <button class="btn header__btn" data-toggle="modal" data-target="#myModal">Profit calculator</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="slider__item">
-                <div class="header__image">
-                    <img src="/img/header__img3.jpg" alt="">
-                </div>
-                <div class="slider__content text-center">
-                    <h1 class="title">Today, the IT-technology market is already valued in trillions of dollars.</h1>
-                    <p class="subtitle">And we know where to invest in this market. Register on our platform and make money with
-                        us!</p>
-                    <div class="buttons">
-                        <button class="btn header__btn header__btn-start" onclick="location.href='{{ route('login') }}'">Invest</button>
-                        <button class="btn header__btn" onclick="location.href='{{ route('about') }}'">Read more</button>
-                        <button class="btn header__btn" data-toggle="modal" data-target="#myModal">Profit calculator</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </header>
+@yield('content')
+
+@component('components.footer')
+@endcomponent
+<script src="js/scripts.min.js"></script>
+
+<!-- <script src="./libs/animations/numscroller-1.0.js"></script> -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+<script>new WOW().init()</script>
+
+</body>
+
+</html>

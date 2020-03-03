@@ -48,57 +48,6 @@
 @endcomponent
 <!-- main -->
 <main class="main main-main">
-    <!-- about -->
-    <section class="about " id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <iframe class="video" src="https://www.youtube.com/embed/XuQCJ0v7tPc" frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p class="video__desc  wow fadeInLeft" data-wow-delay="0.5s">FTF is a huge team, and each member has at
-                        least 12 years of
-                        experience in various
-                        positions in the investment banking segment - from the auditor and analyst of risks department to the
-                        chief financial officer of the investment bank. Forming a dynamic investment portfolio, we use experience
-                        gained in different directions, and are focused on start-ups in the areas of:</p>
-                </div>
-                <div class="col-md-6">
-                    <h2 class="title mt-sm-5">OUR INVESTMENTS</h2>
-                    <div class="block wow fadeInRight" data-wow-delay="0.5s">
-                        <img src="/img/research.svg" alt="">
-                        <div class="block__content">
-                            <h3 class="block__title">ARTIFICIAL INTELLIGENCE</h3>
-                            <p class="block__desc   wow fadeInRight">Patented IT Software based on Arfitificial Intelligence serves
-                                as a tool to
-                                generate stable income for our investors. Our productis in demand in its niche, and is used by our
-                                analysts and leading corporations, such as Huawei, Apple and Google <a href="#startaps"
-                                                                                                       id="more">More...</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="block wow fadeInRight" data-wow-delay="1s">
-                        <img src="/img/laptop.svg" alt="">
-                        <div class="block__content">
-                            <h3 class="block__title">Blockchain</h3>
-                            <p class="block__desc">Today, IT projects in this area are in the spotlight of investors around the
-                                world. But these technologies interest us not only in themselves, we consider the prospects of their
-                                introduction in e-commerce and in the development of marketplaces.</p>
-                        </div>
-                    </div>
-                    <div class="block wow fadeInRight" data-wow-delay="1.5s">
-                        <img src="/img/layers.svg" alt="">
-                        <div class="block__content">
-                            <h3 class="block__title">Marketplace, VR, Hardware and Software Startups</h3>
-                            <p class="block__desc">
-                                With our connections, we can invest in the most Promising startups. We have a good portfolio of
-                                companies that are already profitable and generate income for our investors.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- invest -->
     <section class="invest text-center" id="invest">
         <div class="container">
@@ -124,64 +73,9 @@
                         them back to gain more profits.</p>
                 </div>
             </div>
-            <button class="invest__btn">Invest in FTF</button>
+            <a href="{{ route('login') }}"><button class="invest__btn">Invest in FTF</button></a>
         </div>
 
-    </section>
-    <!-- features	 -->
-    <section class="features">
-        <img src="/img/features__img.png" alt="" class=" purple features__img">
-        <div class="container">
-            <h2 class="title">Our Advantages</h2>
-            <p class="subtitle">Why us?</p>
-            <div class="row">
-                <div class="col-lg-5 col-md-6">
-                    <div class="block wow fadeInUp " data-wow-delay="0.5s">
-                        <img src="/img/features_1.svg" alt="">
-                        <div>
-                            <h3 class="block__title">Stable income - 1.2% per day</h3>
-                            <p class="block__desc">
-                                We are the only Fund that allows such huge returns to be made.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="block wow fadeInUp" data-wow-delay="0.5s">
-                        <img src="/img/features_2.svg" alt="">
-                        <div>
-                            <h3 class="block__title">Quick withdrawal</h3>
-                            <p class="block__desc">
-                                We know how important it is to have access to your personal funds, so we allow withdrawal of dividends
-                                in 24 hours.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6 offset-lg-2	">
-                    <div class="block wow fadeInUp" data-wow-delay="0.5s">
-                        <img src="/img/features_3.svg" alt="">
-                        <div>
-                            <h3 class="block__title">Investment Strategies</h3>
-                            <p class="block__desc">
-                                Your Investment is backed by many years of experience with out professional team of investors.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="block wow fadeInUp" data-wow-delay="0.5s">
-                        <img src="/img/features_4.svg" alt="">
-                        <div>
-                            <h3 class="block__title">The minimum investment - 50$</h3>
-                            <p class="block__desc">
-                                You determine your investment amount. Our Investment plans start from 50 Dollars..
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="features__buttons">
-                <button class="features__buttons-reg mb-3" onclick="location.href='./register.html'">REGISTRATION</button>
-                <button class="features__buttons-calc" data-toggle="modal" data-target="#myModal">PROFIT CALCULATOR</button>
-            </div>
-        </div>
     </section>
     <!-- statistic -->
     <section class="statistic text-center">
@@ -498,416 +392,80 @@
                 </div>
             </div>
         </div>
-        <div class="video" data-toggle="modal" data-target="#videoModal">
-            <button class="video-btn"></button>
-            <iframe id="video-playing" width="100%" height="1366" data-toggle="modal" data-target="#videoModal"
-                    src="https://www.youtube.com/embed/XuQCJ0v7tPc?autoplay=1&loop=1&mute=1&rel=0&controls=0&showinfo=0&playlist=XuQCJ0v7tPc&start=0&allowfullscreen"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            <button class="play-btn" data-toggle="modal" data-target="#videoModal"></button>
-        </div>
+{{--        <div class="video" data-toggle="modal" data-target="#videoModal">--}}
+{{--            <button class="video-btn"></button>--}}
+{{--            <iframe id="video-playing" width="100%" height="1366" data-toggle="modal" data-target="#videoModal"--}}
+{{--                    src="https://www.youtube.com/embed/XuQCJ0v7tPc?autoplay=1&loop=1&mute=1&rel=0&controls=0&showinfo=0&playlist=XuQCJ0v7tPc&start=0&allowfullscreen"--}}
+{{--                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"--}}
+{{--                    allowfullscreen></iframe>--}}
+{{--            <button class="play-btn" data-toggle="modal" data-target="#videoModal"></button>--}}
+{{--        </div>--}}
     </section>
     <!-- Большая секция -->
     <section class="bigSection" id="bigSection">
-        <!-- Информация о нас -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9">
-                    <div class="info-block">
-                        <div class="info__top">OUR STRATEGY</div>
-                        <div class="info__content">
-                            <p>At the core, our business model is based on the principle of 3-level diversification of resources,
-                                investments and risks </p>
-                            <p>
-                                What does it mean? If we invest in one of the niche projects, we make sure to select adjacent projects
-                                in the same niche - to lower risk and shorten the time to profit.
-                            </p>
-                            <p>
-                                With this approach to investing in different fields we increase profits and dividends from existing
-                                investments and have a positive financial balance and ensure the payout of dividends to our investors
-                                in time.
-                            </p>
-                            <p>
-                                And this financial return is guaranteed as the money is raised not only through our online platform,
-                                but also from other sources, including our own investment funds.
-                            </p>
-                            <p>
-                                In addition to avoiding the risk, the FTF business model is a clear system of forecasted earnings and
-                                bonuses. Once you sign up on our website, you get 1.2% per day from the amount you invest, as well as
-                                bonuses from 0.34 to 1.52% by the end of the investment period, according to your selected investment
-                                plan. All calculations and payments are made automatically and transparently.
-                            </p>
-                            <p>
-                                This business model allows us not only to work consistently and be financially sustainable in a very
-                                volatile market realities, but also gives us the ability to quickly make decisions, be a mobile and
-                                efficient team, because the money is always working to generate a return.
-                            </p>
-                            <p>
-                                Read more about our business packages that are available on the website
-                            </p>
-                        </div>
-                        <button class="info__btn" onclick="location.href='{{ route('login') }}'"><i class=" far fa-user"></i>
-                            LOGIN/REGISTER</button>
-                    </div>
-                </div>
-                <div class="col-lg-3" id="documents">
-                    <div class="block wow zoomIn mb-5" data-wow-delay="0.5s" data-toggle="modal" data-target="#sertificate1">
-                        <button data-toggle="modal" data-target="#sertificate1"><i class="fas fa-search"
-                                                                                   aria-hidden="true"></i></button>
-                        <div class="white">
-                            <p class="text-g">Document</p>
-                            <p class="subtitle">Certificate Of Registration Of A Limited Partnership</p>
-                        </div>
-                        <div class="gradient"></div>
-                        <img src="/img/sertificate1.jpg" alt="">
-                    </div>
-                    <div class="block wow zoomIn" data-wow-delay="0.5s" data-toggle="modal" data-target="#sertificate2">
-                        <button data-toggle="modal" data-target="#sertificate2"><i class="fas fa-search"
-                                                                                   aria-hidden="true"></i></button>
-                        <div class="white">
-                            <p class="text-g">Document</p>
-                            <p class="subtitle"> Official Documents</p>
-                        </div>
-                        <div class="gradient"></div>
-                        <img src="/img/sertificate2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <!-- Бизнесс пакеты -->
         <div class="container text-center mt-5">
-            <p class="pretitle">CHOOSE YOUR DEPOSIT</p>
-            <h2 class="title">OUR BUSINESS PACKAGES</h2>
+            <p class="pretitle">Выбирите срок вклада</p>
+            <h2 class="title">Пакеты инвестирования</h2>
             <div class="rewind"></div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-md-3 mb-5">
-                    <div class="card wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                        <div class="card__img">
-                            <img src="/img/rocket.png" alt="">
-                        </div>
-                        <h2 class="investment__title">investment: 1$</h2>
-                        <ul class="card__list">
-                            <li class="list__item list__item-true">Minimum investment: 50$</li>
-                            <li class="list__item list__item-true">Monthly Return: 38%</li>
-                            <li class="list__item list__item-true">Return: after the completion of time period.</li>
-                            <li class="list__item list__item-true">Several deposits: yes</li>
-                            <li class="list__item list__item-true">Capitalization: Yes</li>
-                            </li>
-                        </ul>
-                        <button class="card__btn">MAKE A DEPOSIT</button>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-md-3 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 mb-md-4 mb-5">
                     <div class="card wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1.5s">
                         <div class="card__img">
                             <img src="/img/cube.png" alt="">
                         </div>
-                        <h2 class="investment__title">investment: 500$</h2>
+                        <h2 class="investment__title">Вклад на 1 месяц</h2>
                         <ul class="card__list">
-                            <li class="list__item list__item-true">Minimum investment: 500$</li>
-                            <li class="list__item list__item-true">Monthly Return: 41%</li>
-                            <li class="list__item list__item-true">Return: after the completion of time period.</li>
-                            <li class="list__item list__item-true">Bonus to your total Deposit: <b>+ 0.34% </b>
-                            <li class="list__item list__item-true">Capitalization: Yes</li>
-
+                            <li class="list__item list__item-true">5% прибыли в месяц</li>
+                            <li class="list__item list__item-true">Ежимесячная выплата</li>
                             </li>
                         </ul>
-                        <button class="card__btn">MAKE A DEPOSIT</button>
+                        <a href="{{ route('login') }}">
+                            <button class="card__btn">Внести вклад</button>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-md-3 mb-5">
+                <div class="col-lg-3 col-md-6 mb-md-4 mb-5">
                     <div class="card wow zoomIn" data-wow-duration="0.5s" data-wow-delay="1s">
                         <div class="card__img">
                             <img src="/img/crown.png" alt="">
                         </div>
-                        <h2 class="investment__title">investment: 5000$</h2>
+                        <h2 class="investment__title">Вклад на 3 месяца</h2>
                         <ul class="card__list">
-                            <li class="list__item list__item-true">Minimum investment: 5000$</li>
-                            <li class="list__item list__item-true">Monthly Return: 45%</li>
-                            <li class="list__item list__item-true">Return: after the completion of time period.</li>
-                            <li class="list__item list__item-true">Several deposits: yes</li>
-                            <li class="list__item list__item-true">Bonus to your total Deposit: <b>+ 0.71% </b>
-                            <li class="list__item list__item-true">Capitalization: Yes</li>
+                            <li class="list__item list__item-true">7% прибыли в месяц</li>
+                            <li class="list__item list__item-true">Ежимесячная выплата</li>
+                            <li class="list__item list__item-true">Капитализация</li>
                             </li>
                         </ul>
-                        <button class="card__btn">MAKE A DEPOSIT</button>
+                        <a href="{{ route('login') }}">
+                            <button class="card__btn">Внести вклад</button>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-md-3 mb-5">
+                <div class="col-lg-3 col-md-6 mb-md-4 mb-5">
                     <div class="card wow zoomIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
                         <div class="card__img">
                             <img src="/img/diamand.png" alt="">
                         </div>
-                        <h2 class="investment__title">investment: 50000$</h2>
+                        <h2 class="investment__title">Вклад на 6 месяцев</h2>
                         <ul class="card__list">
-                            <li class="list__item list__item-true">Minimum investment: 50000$</li>
-                            <li class="list__item list__item-true">Monthly Return: 50%</li>
-                            <li class="list__item list__item-true">Return: after the completion of time period.</li>
-                            <li class="list__item list__item-true">Several deposits: yes</li>
-                            <li class="list__item list__item-true">Bonus to your total Deposit: <b>+ 1.52% </b>
-                            <li class="list__item list__item-true">Capitalization: Yes</li>
+                            <li class="list__item list__item-true">9% прибыли в месяц</li>
+                            <li class="list__item list__item-true">Ежимесячная выплата</li>
+                            <li class="list__item list__item-true">Капитализация</li>
                             </li>
                         </ul>
-                        <button class="card__btn">MAKE A DEPOSIT</button>
+                        <a href="{{ route('login') }}">
+                            <button class="card__btn">Внести вклад</button>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- packages -->
-    <section class="packages" id="news">
-        <div class="container">
-            <h2 class="title text-center">Company's news
-            </h2>
-            <div class="packages__slider">
-                @foreach($articles as $article)
-                    <!-- item start-->
-                    <div class="item__wrap">
-                        <div class="slider__item">
-                            <div class="item__top">
-                                <img src="/img/newspaper.svg" alt="">
-                            </div>
-                            <a style="text-decoration: none" href="{{ route('article', $article->slug) }}">
-                            <h3 class="item__title">{{ $article->title }}
-                            </h3>
-                            </a>
-                            <!-- синими буквами -->
-                            <div class="item__info">
-                                <div class="date"><i class="far fa-calendar-alt"></i>{{ $article->created_at->diffForHumans() }}</div>
-                                <div class="elem">|</div>
-                                <div class="author"><i class="far fa-user"></i>{{ $article->category->name }}</div>
-                            </div>
-                            <p class="item__desc">
-                                {!! substr($article->content, 0, 200) !!}
-                            </p>
-                            <button class="item__readmore" target="_blank"
-                                    onclick="location.href='{{ route('article', $article->slug) }}'">
-                                Read More
-                            </button>
-                        </div>
-                    </div>
-                    <!-- item end -->
-                @endforeach
-            </div>
-        </div>
-    </section>
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2 class="title wow zoomIn">FAQ</h2>
-            <div class="row">
-                <div class="col-lg-8 mb-lg-0 mb-5">
-                    <div class="accordion" id="accordionExample">
-                        <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">
-                                        HOW TO GET STARTED WITH FUTURE TECHNOLOGIES FUND (FTF)
-                                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                 data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <h6 class="cit">HOW TO GET STARTED WITH FUTURE TECHNOLOGIES FUND (FTF)
-                                    </h6>
-                                    <p class="desc">
-                                        WHAT YOU NEED TO GET STARTED WITH FUTURE TECHNOLOGIES FUND (FTF) <br>
-                                        To start working with the FTF fund, follow the steps:
-                                    <ol>
-                                        <li>Complete the registration on the official Website - this simple procedure will not take long
-                                        </li>
-                                        <li> Go to your account;</li>
-                                        <li>Find the Invest Section;</li>
-                                        <li> Make your initial deposit</li>
-                                    </ol>
-                                    After that all investment activity will be carried out by our company, at the specified time, you
-                                    will receive your income..
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        CAN I EARN BY INVESTING WITH FUTURE TECHNOLOGIES FOND (FTF)?
-                                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <p>The project we created cannot be considered a kind of a win-win lottery - there are always risks
-                                        in the investment business. However, the success of any business, including ours, depends on how
-                                        justified these risks are, and the main task of management is to minimize the risks.</p>
-                                    <p>All answers to questions about exactly how we work with risks, how we earn and guarantee profit
-                                        for our investors, you will find in a separate section of our website.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingThree">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        WHAT IS THE MINIMUM AND MAXIMUM AMOUNT OF DEPOSIT?
-                                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    <p>The minimum deposit amount is 50 USD.</p>
-                                    <p>The maximum deposit amount is 20,000 USD.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contacts">
-                        <h3 class="contacts__title">Contacts</h3>
-                        <p class="contacts__desc">We believe that communication is a key tool in the success of our business
-
-                        </p>
-                        <div class="contacts__info">
-                            <p><i class="fas fa-map-marker" aria-hidden="true"></i><b>Suite 1, 4 Queen Street, Edinburgh, EH2 1JE,
-                                    Scotland, UK </b></p>
-                            <div><i class="far fa-envelope" aria-hidden="true"></i><a
-                                    href="mailto:info@ftf.ai"><b>info@ftf.ai</b></a></div>
-                            <p>
-                                <i class="far fa-clock" aria-hidden="true"></i>
-                                <b>Mon - Fri : 10:00 - 20:00 GMT <br>
-                                    Sat - Sun : Weekend</b>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Partners -->
-    <section class="partners">
-        <div class="container">
-            <h2 class="title">Our partners</h2>
-            <p class="subtitle">We work with:
-            </p>
-            <div class="partners__wrap">
-                <a href="#"><img src="/img/partner1.png" alt=""></a>
-                <a href="#"><img src="/img/partner2.png" alt=""></a>
-                <a href="#"><img src="/img/partner3.png" alt=""></a>
-                <a href="#"><img src="/img/partner4.png" alt=""></a>
-                <a href="#"><img src="/img/partner5.png" alt=""></a>
-                <a href="#"><img src="/img/partner6.png" alt=""></a>
-                <a href="#"><img src="/img/partner7.png" alt=""></a>
-                <a href="#"><img class="apple" src="/img/partner8.png" alt=""></a>
-                <a href="#"><img src="/img/partner9.png" alt=""></a>
-                <a href="#"><img src="/img/partner10.svg" alt=""></a>
             </div>
         </div>
     </section>
 </main>
-<!-- Footer -->
-<footer class="footer">
-    <!-- верхняя тёмная часть
-     4 колонки, у каждой есть нейм и контент -->
-    <div class="footer__top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-5">
-                    <h2 class="col__name">
-                        <img src="/img/logo2.png" alt="" class="footer__logo">
-                    </h2>
-                    <div class="col__content">
-                        <p>FTF is a huge team, and each member has at least 12 years of experience in various positions in the
-                            investment banking segments.
 
-                        </p>
-                        <button class="btn footer__btn" data-toggle="modal" data-target="#myModal">PROFIT CALCULATOR</button>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-5">
-                    <h2 class="col__name">Navigation</h2>
-                    <nav class="col__content">
-                        <div class="nav__wrap">
-                            <ul class="nav">
-                                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                                <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
-                                <li class="nav__item"><a href="{{ route('reviews') }}" class="nav__link">Reviews of our company</a></li>
-                                <li class="nav__item"><a href="#bigSection" class="nav__link">Strategy</a></li>
-                                <li class="nav__item"><a href="{{ route('rules') }}" class="nav__link">Customer Agreement</a></li>
-                            </ul>
-                            <ul class="nav">
-                                <li class="nav__item"><a href="#bigSection" class="nav__link">Our documents</a></li>
-                                <li class="nav__item"><a href="#news" class="nav__link">News</a></li> <br>
-                                <li class="nav__item"><a href="#faq" class="nav__link">F.A.Q.</a></li>
-                                <li class="nav__item"><a href="#faq" class="nav__link">Contacts</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-5">
-                    <h2 class="col__name">Facebook</h2>
-                    <div class="col__content">
-                        <!-- виджет -->
-                        <div id="fb-root"></div>
-                        <script async defer crossorigin="anonymous"
-                                src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v5.0"></script>
-
-                        <div class="fb-page" data-href="https://www.facebook.com/FTFai" data-tabs="timeline" data-height="250"
-                             data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
-                             data-show-facepile="true">
-                            <blockquote cite="https://www.facebook.com/FTFai" class="fb-xfbml-parse-ignore"><a
-                                    href="https://www.facebook.com/FTFai">FTF - Future Technologies Fund</a></blockquote>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-5">
-                    <h2 class="col__name">Contacts</h2>
-                    <div class="col__content">
-                        <a href="mailto:info@ftf.ai" class="mail"><i class="far fa-envelope"></i>info@ftf.ai</a>
-                        <p class="schedule">Mon - Fri : 10:00 - 20:00 GMT
-                        </p>
-                        <p class="schedule">Sat - Sun : Weekend</p>
-                    </div>
-                    <div class="col__content-b">
-                        <a target="_blank" href="https://www.facebook.com/FTFai/"><i class="fab fa-facebook"></i></a>
-                        <a target="_blank" href="https://t.me/ftf_ai"><i class="fab fa-telegram-plane"></i></a>
-                        <a target="_blank" href="https://www.youtube.com/channel/UCYuzxaAGTWlNA3wqFeLiJzQ"><i
-                                class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- bottom -->
-    <div class="footer__bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-12">
-                    <p>©️ 2019 <b>FUTURE TECHNOLOGIES FUND</b>. </p>
-                    <p>Copyright PAGLETTO GROUP LP. All rights reserved. PAGLETTO GROUP LP is registered in Scotland
-                        with company number SL33917 and its registered office at Suite 1, 4 Queen street, Edinburgh, EH2 1JE,
-                        Scotland, UK.</p>
-                </div>
-                <!-- <div class="col-lg-5 col-12 ">
-                    <p>Subscribe:
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a></p>
-                </div> -->
-            </div>
-        </div>
-    </div>
-</footer>
+@component('components.footer')
+@endcomponent
 <!-- Modals -->
 <!-- The Modal -->
 <div class="modal" id="myModal">
@@ -1054,59 +612,24 @@
     </div>
 </div>
 <!-- Video-->
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" data-toggle="modal" data-target="#sertificate1">Video
-                </h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body modal-content-video">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XuQCJ0v7tPc?autoplay=1&loop=1"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-</div>
+{{--<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel"--}}
+{{--     aria-hidden="true">--}}
+{{--    <div class="modal-dialog" role="document">--}}
+{{--        <div class="modal-content">--}}
+{{--            <div class="modal-header">--}}
+{{--                <h4 class="modal-title" data-toggle="modal" data-target="#sertificate1">Video--}}
+{{--                </h4>--}}
+{{--                <button type="button" class="close" data-dismiss="modal">&times;</button>--}}
+{{--            </div>--}}
+{{--            <div class="modal-body modal-content-video">--}}
+{{--                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XuQCJ0v7tPc?autoplay=1&loop=1"--}}
+{{--                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"--}}
+{{--                        allowfullscreen></iframe>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 <!-- Serftificates -->
-<div class="modal fade" id="sertificate1" tabindex="-1" role="dialog" aria-labelledby="sertificate1Label"
-     aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" data-toggle="modal" data-target="#sertificate1">Sertificate
-                </h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body" role="document">
-                <div class="modal-content modal-content-video">
-                    <img src="/img/sertificate1.jpg" alt="" class="sertificates__img">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- 2 -->
-<div class="modal fade" id="sertificate2" tabindex="-1" role="dialog" aria-labelledby="sertificate2Label"
-     aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" data-toggle="modal" data-target="#sertificate2">Sertificate
-                </h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body" role="document">
-                <div class="modal-content modal-content-video">
-                    <img src="/img/sertificate2.jpg" alt="" class="sertificates__img">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- scripts -->
 <script src="js/scripts.min.js"></script>
 
