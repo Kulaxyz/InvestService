@@ -163,7 +163,7 @@ class UserCrudController extends CrudController
     /**
      * Update the specified resource in the database.
      *
-     * @return \Illuminate\Http\RedirectResponse
+     * @return \Backpack\CRUD\app\Http\Controllers\Operations\Response
      */
     public function update()
     {

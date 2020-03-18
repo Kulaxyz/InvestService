@@ -2,6 +2,7 @@
   'app' => 
   array (
     'name' => 'Laravel',
+    'mail' => 'example@mail.com',
     'env' => 'local',
     'debug' => true,
     'url' => 'http://localhost',
@@ -381,6 +382,10 @@
       ),
     ),
     'prefix' => 'laravel_cache',
+  ),
+  'charts' => 
+  array (
+    'default_library' => 'Chartjs',
   ),
   'database' => 
   array (

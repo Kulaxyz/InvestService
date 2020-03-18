@@ -1,15 +1,5 @@
 @extends(backpack_view('blank'))
 
-@php
-    $widgets['before_content'][] = [
-        'type'        => 'jumbotron',
-        'heading'     => trans('backpack::base.welcome'),
-        'content'     => trans('backpack::base.use_sidebar'),
-        'button_link' => backpack_url('logout'),
-        'button_text' => trans('backpack::base.logout'),
-    ];
-@endphp
-
 @section('content')
     <div class="row">
         <div class="col-6 col-lg-3">
@@ -57,9 +47,15 @@
             </div>
         </div>
     </div>
+    <h1>Общая статистика (кол-во)</h1>
     {!! $chart->container() !!}
+    <h1>Общая статистика (в USD)</h1>
     {!! $moneyChart->container() !!}
     <div class="row">
+        <div class="row">
+            <h2 class="mr-5 ml-4">Статистика пакетов (в USD)</h2>
+            <h2 class="ml-5">Статистика пакетов (кол-во)</h2>
+        </div>
         {!! $typesAmountChart->container() !!}
         {!! $typesChart->container() !!}
     </div>

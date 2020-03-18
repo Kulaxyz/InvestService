@@ -4,16 +4,13 @@
     <div class="cabinet__wrap2">
         <!-- хлебные крошки -->
         <div class="cabinet__breadcrumbs">
-            <p id="page__name">Deposit Creation</p>
+            <p id="page__name">Создание Депозита</p>
             <ul class="breadcrumbs__list">
                 <li class="list__item">
-                    <a href="{{ route('wallet') }}"> Main </a>
+                    <a href="{{ route('wallet') }}">Кошелёк</a>
                 </li>
                 <li class="list__item">
-                    <a href="{{ route('wallet') }}">Personal Account</a>
-                </li>
-                <li class="list__item">
-                    <a href="#">Deposit Creation</a>
+                    <a href="#">Пополнить кошелёк</a>
                 </li>
             </ul>
         </div>
@@ -23,16 +20,16 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <p> CHOOSE A PAYMENT SYSTEM:</p>
+                                <p> Выберите платёжную систему:</p>
                                 <div class="card-table-wrap">
                                     <div class="card-table2">
                                         <table class="table table-bordered">
                                             <thead>
                                             <tr>
-                                                <th scope="col" class="table-secondary ">Payment System</th>
-                                                <th scope="col" class="table-secondary text-center">Comission</th>
-                                                <th scope="col" class="table-secondary text-center">Time</th>
-                                                <th scope="col" class="table-secondary text-center"> Complete</th>
+                                                <th scope="col" class="table-secondary ">Платёжная система</th>
+                                                <th scope="col" class="table-secondary text-center">Комиссия</th>
+                                                <th scope="col" class="table-secondary text-center">Время</th>
+                                                <th scope="col" class="table-secondary text-center">Успешен</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -79,9 +76,6 @@
                 </div>
             </div>
         </main>
-        <!-- футер -->
-        <footer class="cabinet__footer">
-            <p>Copyright © Future Technologies Company 2019</p>
-        </footer>
+
     </div>
 @stop

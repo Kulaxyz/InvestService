@@ -4,16 +4,13 @@
     <div class="cabinet__wrap2">
         <!-- хлебные крошки -->
         <div class="cabinet__breadcrumbs">
-            <p id="page__name">Deposit Creation</p>
+            <p id="page__name">Создание Депозита</p>
             <ul class="breadcrumbs__list">
                 <li class="list__item">
-                    <a href="{{ route('wallet') }}"> Main </a>
+                    <a href="{{ route('wallet') }}">Кошелёк</a>
                 </li>
                 <li class="list__item">
-                    <a href="{{ route('wallet') }}">Personal Account</a>
-                </li>
-                <li class="list__item">
-                    <a href="#">Deposit Creation</a>
+                    <a href="#">Создание Депозита</a>
                 </li>
             </ul>
         </div>
@@ -21,7 +18,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-8">
-                        <p class="pretitle">Создание Депозита</p>
+                        <p class="pretitle">Кошелёк</p>
                         <div class="balance card">
                             <div class="card-header card-header-white">
                                 ВАШ БАЛАНС
@@ -113,26 +110,23 @@
                                 </div>
                                 <form class="card-input" action="{{route('deposit')}}" method="post">
                                     @csrf
-                                    <h2 class="input-title">SELECT THE DEPOSIT AMOUNT:</h2>
+                                    <h2 class="input-title">Введите сумму депозита:</h2>
                                     <div class="input-wrap">
-                                        <input type="text" id="input" name="amount" maxlength="5" placeholder="Amount: 0.00">
+                                        <input type="text" id="input" name="amount" maxlength="5" placeholder="сумма: 0.00">
                                         <div class="dollar">$</div>
                                     </div>
-                                    <p class="input-subtitle">You can invest from 50$ to 20000$ per transaction</p>
                                     <input type="hidden" id="type" name="type" value="1">
                                     <p id ="checkbox2"></p>
-                                    <button class="button-create">CREATE A DEPOSIT</button>
+                                    <button class="button-create">Создать депозит!</button>
                                 </form>
                             </div>
                             <div class="card--footer">
-                                <p class="footer-info">
-                                    the investment can be withdrawn after the end of the investment perion. The first accrual for the «7
-                                    day», «14 day», «30 day» plans happens 24 hours after the deposit creation.
-                                </p>
                                 <div class="bonus-info-wrap">
                     <span class="bonus-info">* О Бонусе
                       <div class="info__hover">
-                        При создании депозита на сумму выше 10 000$ к сумме депозита будет добавлено 2%.
+                        При создании депозита на сумму выше 10 000$ депозитная ставка увеличится на 1%.
+                        При создании депозита на сумму выше 15 000$ депозитная ставка увеличится на 1.5%.
+                        При создании депозита на сумму выше 20 000$ депозитная ставка увеличится на 2%.
                       </div>
                     </span>
 
@@ -141,10 +135,10 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <p class="pretitle">Information About Your Deposit</p>
+                        <p class="pretitle">Информация о депозите</p>
                         <!-- deposit -->
                         <div class="widget">
-                            <h3 class="widget__name">DEPOSIT SUM</h3>
+                            <h3 class="widget__name">Сумма депозита</h3>
                             <div class="widget__content-wrap">
                                 <svg width="64" height="54" viewBox="0 0 64 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -156,7 +150,7 @@
                         </div>
                         <!-- profit -->
                         <div class="widget">
-                            <h3 class="widget__name">PROFIT</h3>
+                            <h3 class="widget__name">Прибыль</h3>
                             <div class="widget__content-wrap">
                                 <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -170,9 +164,16 @@
                                 <span id="widget__profit" class="widget__money">0</span>
                             </div>
                         </div>
+                        <div class="widget">
+                            <h3 class="widget__name">Бонус</h3>
+                            <div class="widget__content-wrap">
+                                <img src="/img/gift.png" alt="">
+                                <span id="bonus" class="widget__static">0</span>
+                            </div>
+                        </div>
                         <!-- final -->
                         <div class="widget">
-                            <h3 class="widget__name">FINAL AMOUNT</h3>
+                            <h3 class="widget__name">Финальная сумма</h3>
                             <div class="widget__content-wrap">
                                 <svg width="64" height="56" viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -198,61 +199,12 @@
                                 <span id="widget__final" class="widget__money">0</span>
                             </div>
                         </div>
-                        <div class="widget__wrap2">
-                            <div class="widget-min">
-                                <h3 class="widget__name">Rate</h3>
-                                <div class="widget__content-wrap">
-                                    <img src="/img/discount 1.png" alt="">
-
-                                    <span class="widget__static">5% в месяц</span>
-                                </div>
-                            </div>
-                            <div class="widget-min ">
-                  <span class="info">i
-                    <div class="info__hover info__hover-long">
-                      IInterest capitalization is a method of calculating interest on a Deposit, in which the Deposit
-                      amount is first increased by the already accrued interest, and then the interest for the next
-                      period is considered to be the interest on the received amount
-                    </div>
-                  </span>
-                                <h3 class="widget__name">Capitalization</h3>
-                                <div class="widget__content-wrap widget__content-wrap-bt">
-                                    <img src="/img/man-green.png" alt="">
-                                    <p class="widget__min-text" id="capitalization">Отсутствует</p>
-                                </div>
-                            </div>
-                            <div class="widget-min">
-                  <span class="info">i
-                    <div class="info__hover">
-                      Bonus interest is added to the earned amount after the Deposit period ends
-                    </div>
-                  </span>
-                                <h3 class="widget__name">Bonus</h3>
-                                <div class="widget__content-wrap widget__content-wrap-bt widget__bonus-wrap">
-                                    <img src="/img/gift.png" alt="">
-                                    <p class="widget__min-text" id="bonus">Отсутствует</p>
-                                </div>
-                            </div>
-                            <div class="widget-min">
-                                <h3 class="widget__name">Add. Information</h3>
-                                <div class="widget__content-wrap-center">
-                                    <img src="/img/invoice.png" alt="">
-                                    <span class="widget__information">
-                      We dont have
-                      a Limit on the number of <b>investments</b>
-                    </span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
             </div>
         </main>
-        <!-- футер -->
-        <footer class="cabinet__footer">
-            <p>Copyright © Future Technologies Company 2019</p>
-        </footer>
+
     </div>
 @endsection
 @section('scripts')

@@ -4,16 +4,13 @@
     <div class="cabinet__wrap2">
         <!-- хлебные крошки -->
         <div class="cabinet__breadcrumbs">
-            <p id="page__name">Deposit Creation</p>
+            <p id="page__name">Вывод средств</p>
             <ul class="breadcrumbs__list">
                 <li class="list__item">
-                    <a href="{{ route('wallet') }}"> Main </a>
+                    <a href="{{ route('wallet') }}">Кошелёк</a>
                 </li>
                 <li class="list__item">
-                    <a href="{{ route('wallet') }}">Personal Account</a>
-                </li>
-                <li class="list__item">
-                    <a href="{{ route('wallet') }}">Deposit Creation</a>
+                    <a href="#">Пополнить кошелёк</a>
                 </li>
             </ul>
         </div>
@@ -22,7 +19,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <p class="pretitle">Please select a Payment Gateway to Withdraw Funds from FTF:</p>
+                            <p class="pretitle">Пожалуйста, выберите, куда вы хотите вывести средства:</p>
                             <div class="request__wrap">
                                 <div class="request__card">
                                     <div class="img-wrap"><img src="../img/master.png" alt=""></div>
@@ -47,9 +44,9 @@
             </div>
         </main>
         <!-- футер -->
-        <footer class="cabinet__footer">
-            <p>Copyright © Future Technologies Company 2019</p>
-        </footer>
+{{--        <footer class="cabinet__footer">--}}
+{{--            <p>Copyright © Future Technologies Company 2019</p>--}}
+{{--        </footer>--}}
     </div>
 @stop
 @section('modal')

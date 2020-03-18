@@ -10,124 +10,17 @@
 <div class="page-preloader">
     <div class="loader"></div>
 </div>
-<!-- TradingView Widget BEGIN -->
-<div class="d-none d-lg-block tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
-            async>
-        {
-            "symbols": [
-            {
-                "title": "NASDAQ 100",
-                "proName": "OANDA:NAS100USD"
-            },
-            {
-                "title": "EUR/USD",
-                "proName": "FX_IDC:EURUSD"
-            },
-            {
-                "title": "BTC/USD",
-                "proName": "BITSTAMP:BTCUSD"
-            },
-            {
-                "title": "ETH/USD",
-                "proName": "BITSTAMP:ETHUSD"
-            }
-        ],
-            "colorTheme": "light",
-            "isTransparent": false,
-            "displayMode": "adaptive",
-            "locale": "en"
-        }
-    </script>
-</div>
-<!-- TradingView Widget END -->
-
 <!-- header -->
 @component('components.header')
 @endcomponent
 <!-- main -->
 <main class="main main-main">
-    <!-- invest -->
-    <section class="invest text-center" id="invest">
-        <div class="container">
-            <h2 class="title">INVEST WITH US </h2>
-            <p class="subtitle">How do I start?</p>
-            <div class="row">
-                <div class="col-md-4 mb-3 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
-                    <div class="block__number n-1">1</div>
-                    <h3 class="block__title">Registration</h3>
-                    <p class="block__desc">Complete the registration process on the website to open an account. Click
-                        "Register"
-                        and fill in all required fields</p>
-                </div>
-                <div class="col-md-4 mb-3 wow fadeInUp" data-wow-delay="0.75s" data-wow-duration="0.5s">
-                    <div class="block__number n-2 ">2</div>
-                    <h3 class="block__title">Open a Deposit</h3>
-                    <p class="block__desc">Make an investment (starting from $ 50) and we will do the rest.</p>
-                </div>
-                <div class="col-md-4 wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">
-                    <div class="block__number n-3">3</div>
-                    <h3 class="block__title">Receive your Profits</h3>
-                    <p class="block__desc">Upon the end of the period the investment you can withdraw your funds or reinvest
-                        them back to gain more profits.</p>
-                </div>
-            </div>
-            <a href="{{ route('login') }}"><button class="invest__btn">Invest in FTF</button></a>
-        </div>
-
-    </section>
-    <!-- statistic -->
-    <section class="statistic text-center">
-        <div class="gray"></div>
-        <img src="/img/statistic_bg.png" alt="" class="statistic__bg">
-        <div class="container">
-            <h2 class="title">OUR STATISTICS</h2>
-            <div class="hand mb-sm-5"></div>
-            <!-- инфа -->
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-12 mb-5 mb-lg-0 text-center text-lg-left">
-                    <div class="block justify-content-start">
-                        <img src="/img/users.svg" alt="" class="block__img">
-                        <div class="block__info">
-                            <p class="numbers numscroller" data-min='1' data-max='484314' data-increment='2000'>484314</p>
-                            <p class="numbers__subtitle">INVESTORS</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 mb-5 mb-lg-0 text-center  text-clg-left ">
-                    <div class="block justify-content-start">
-                        <img src="/img/work.svg" alt="" class="block__img">
-                        <div class="block__info">
-                            <p class="numbers numscroller" data-min='1' data-max='4039' data-increment='100'>4039</p>
-                            <p class="numbers__subtitle">NEW INVESTORS TODAY</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 mb-5 mb-lg-0 text-center text-lg-left">
-                    <div class="block  justify-content-start">
-                        <img src="/img/credit-card.svg" alt="" class="block__img">
-                        <div class="block__info">
-                            <p class="numbers numbers-dol numscroller" data-min='1' data-max='1537' data-increment='10'>1537
-                            </p>
-                            <p class="numbers__subtitle">AVERAGE INVESTMENT</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Кнопки -->
-            <div class="statistic__buttons mt-1">
-                <button class="statistic__btn">JOIN US</button>
-                <button class="statistic__btn mt-3" data-toggle="modal" data-target="#myModal">PROFIT CALCULATOR</button>
-            </div>
-        </div>
-
-    </section>
     <!-- Стартапы и технологии -->
     <section class="startaps" id="startaps">
         <div class="container">
-            <h2 class="title wow zoomIn">START-UPS AND TECHNOLOGY</h2>
-            <p class="subtitle">OUR MAIN FOCUS
+            <h2 class="title wow zoomIn">СТАРТАПЫ И ТЕХНОЛОГИИ
+            </h2>
+            <p class="subtitle">НА ЧЕМ МЫ БОЛЬШЕ ВСЕГО ЗАРАБАТЫВАЕМ:
             </p>
         </div>
         <div class="startaps__bg">
@@ -139,8 +32,8 @@
                             fill="#0F5AE0" />
                     </svg>
 
-                    <p class="predesc">startups in the field of</p>
-                    <p class="desc">Cryptocurrency</p>
+                    <p class="predesc">Стартапы из сферы:</p>
+                    <p class="desc">Криптовалюты</p>
                 </div>
                 <div class="startaps__tab">
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -173,9 +66,8 @@
                             fill="#0F5AE0" />
                     </svg>
 
-                    <p class="predesc">startups in the field of</p>
-                    <p class="desc">Artificial
-                        Intellegence</p>
+                    <p class="predesc">Стартапы из сферы:</p>
+                    <p class="desc">ИИ</p>
                 </div>
                 <div class="startaps__tab">
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -183,8 +75,8 @@
                             d="M58.864 16.4735C58.7874 14.7898 58.7874 13.1827 58.7874 11.5755C58.7874 10.2744 57.7925 9.27952 56.4915 9.27952C46.925 9.27952 39.6544 6.52436 33.6084 0.63139C32.69 -0.210463 31.3124 -0.210463 30.394 0.63139C24.348 6.52436 17.0774 9.27952 7.51091 9.27952C6.20986 9.27952 5.21495 10.2744 5.21495 11.5755C5.21495 13.1827 5.21495 14.7898 5.13841 16.4735C4.83228 32.5453 4.37309 54.5865 31.2359 63.8469L32.0012 64L32.7665 63.8469C59.5527 54.5865 59.1701 32.6218 58.864 16.4735ZM30.1644 38.7444C29.7052 39.1271 29.1695 39.3566 28.5572 39.3566H28.4807C27.8685 39.3566 27.2562 39.0505 26.8735 38.5913L19.756 30.7085L23.2 27.6472L28.7868 33.8463L41.185 22.0604L44.3229 25.4278L30.1644 38.7444Z"
                             fill="#0F5AE0" />
                     </svg>
-                    <p class="predesc">startups in the field of</p>
-                    <p class="desc"> Blockchain And ICO</p>
+                    <p class="predesc">Стартапы из сферы:</p>
+                    <p class="desc"> Нефть</p>
                 </div>
                 <div class="startaps__tab">
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -214,24 +106,8 @@
                             fill="#0F5AE0" />
                     </svg>
 
-                    <p class="predesc">startups in the field of</p>
-                    <p class="desc">VR Technologies</p>
-                </div>
-                <div class="startaps__tab">
-                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M36.9375 5.72412C36.6875 5.47412 36.349 5.3335 35.9948 5.3335H13.3334C10.3919 5.3335 8 7.72537 8 10.6667V58.6667C8 61.6082 10.3919 64.0001 13.3334 64.0001H45.3334C48.2747 64.0001 50.6668 61.6082 50.6668 58.6667V20.0001C50.6668 19.646 50.5261 19.3074 50.2761 19.0574L36.9375 5.72412ZM48 58.6667C48 60.1367 46.8034 61.3334 45.3334 61.3334H13.3334C11.8634 61.3334 10.6667 60.1367 10.6667 58.6667V10.6667C10.6667 9.19675 11.8634 8.00012 13.3334 8.00012H35.4427L48 20.5522V58.6667Z"
-                            fill="#0F5AE0" />
-                        <path
-                            d="M16 30.6665V51.9999C16 54.2056 17.7943 55.9999 20 55.9999H38.6666C40.8724 55.9999 42.6666 54.2056 42.6666 51.9999V30.6665C42.6666 28.4608 40.8724 26.6665 38.6666 26.6665H20C17.7943 26.6665 16 28.4609 16 30.6665ZM24 53.3333H20C19.2644 53.3333 18.6666 52.7356 18.6666 51.9999V47.9999H24V53.3333ZM32 53.3333H26.6666V47.9999H32V53.3333ZM40 51.9999C40 52.7355 39.4024 53.3333 38.6666 53.3333H34.6666V46.6666C34.6666 45.9296 34.0702 45.3333 33.3332 45.3333H18.6666V37.3333H40V51.9999ZM34.6666 29.3333H38.6666C39.4023 29.3333 40 29.9309 40 30.6666V34.6666H34.6666V29.3333ZM26.6666 29.3333H32V34.6666H26.6666V29.3333ZM24 34.6665H18.6666V30.6665C18.6666 29.9309 19.2643 29.3331 20 29.3331H24V34.6665Z"
-                            fill="#0F5AE0" />
-                        <path
-                            d="M55.6094 13.724L42.2709 0.390625C42.0209 0.140625 41.6824 0 41.3281 0H17.3334C16.5964 0 16 0.596375 16 1.33337C16 2.07037 16.5964 2.66675 17.3334 2.66675H40.7761L53.3334 15.2188V54.625C53.3334 55.362 53.9298 55.9584 54.6668 55.9584C55.4038 55.9584 56.0001 55.362 56.0001 54.625V14.6666C56 14.3125 55.8594 13.974 55.6094 13.724Z"
-                            fill="#0F5AE0" />
-                    </svg>
-
-                    <p class="predesc">startups in the field of</p>
-                    <p class="desc">5G </p>
+                    <p class="predesc">Стартапы из сферы:</p>
+                    <p class="desc">Ценные металлы</p>
                 </div>
             </div>
             <div class="startaps__content startaps__content-active ">
@@ -392,14 +268,41 @@
                 </div>
             </div>
         </div>
-{{--        <div class="video" data-toggle="modal" data-target="#videoModal">--}}
-{{--            <button class="video-btn"></button>--}}
-{{--            <iframe id="video-playing" width="100%" height="1366" data-toggle="modal" data-target="#videoModal"--}}
-{{--                    src="https://www.youtube.com/embed/XuQCJ0v7tPc?autoplay=1&loop=1&mute=1&rel=0&controls=0&showinfo=0&playlist=XuQCJ0v7tPc&start=0&allowfullscreen"--}}
-{{--                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"--}}
-{{--                    allowfullscreen></iframe>--}}
-{{--            <button class="play-btn" data-toggle="modal" data-target="#videoModal"></button>--}}
-{{--        </div>--}}
+        {{--        <div class="video" data-toggle="modal" data-target="#videoModal">--}}
+        {{--            <button class="video-btn"></button>--}}
+        {{--            <iframe id="video-playing" width="100%" height="1366" data-toggle="modal" data-target="#videoModal"--}}
+        {{--                    src="https://www.youtube.com/embed/XuQCJ0v7tPc?autoplay=1&loop=1&mute=1&rel=0&controls=0&showinfo=0&playlist=XuQCJ0v7tPc&start=0&allowfullscreen"--}}
+        {{--                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"--}}
+        {{--                    allowfullscreen></iframe>--}}
+        {{--            <button class="play-btn" data-toggle="modal" data-target="#videoModal"></button>--}}
+        {{--        </div>--}}
+    </section>
+    <!-- invest -->
+    <section class="invest text-center" id="invest">
+        <div class="container">
+            <h2 class="title">ИНВЕСТИРОВАТЬ С НАМИ НАДЕЖНО И ВЫГОДНО</h2>
+            <p class="subtitle">С чего начать?</p>
+            <div class="row">
+                <div class="col-md-4 mb-3 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+                    <div class="block__number n-1">1</div>
+                    <h3 class="block__title">Регистрация</h3>
+                    <p class="block__desc">Пройдите процедуру регистрации на сайте для открытия счета. Нажмите кнопку «Регистрация» и заполните все необходимые поля
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3 wow fadeInUp" data-wow-delay="0.75s" data-wow-duration="0.5s">
+                    <div class="block__number n-2 ">2</div>
+                    <h3 class="block__title">Откройте депозит</h3>
+                    <p class="block__desc">Сделайте инвестицию на удобный срок на сумму от 100 рублей и ваши деньги начнут работать на вас.</p>
+                </div>
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.5s">
+                    <div class="block__number n-3">3</div>
+                    <h3 class="block__title">Распоряжайтесь прибылью</h3>
+                    <p class="block__desc">По факту окончания периода инвестиции вклад с прибылью будут доступы для вывода или создания нового депозита.</p>
+                </div>
+            </div>
+            <a href="{{ route('login') }}"><button class="invest__btn">Начать зарабатывать!</button></a>
+        </div>
+
     </section>
     <!-- Большая секция -->
     <section class="bigSection" id="bigSection">
@@ -417,7 +320,7 @@
                         <h2 class="investment__title">Вклад на 1 месяц</h2>
                         <ul class="card__list">
                             <li class="list__item list__item-true">5% прибыли в месяц</li>
-                            <li class="list__item list__item-true">Ежимесячная выплата</li>
+                            <li class="list__item list__item-true">Ежемесячная выплата</li>
                             </li>
                         </ul>
                         <a href="{{ route('login') }}">
@@ -433,7 +336,7 @@
                         <h2 class="investment__title">Вклад на 3 месяца</h2>
                         <ul class="card__list">
                             <li class="list__item list__item-true">7% прибыли в месяц</li>
-                            <li class="list__item list__item-true">Ежимесячная выплата</li>
+                            <li class="list__item list__item-true">Ежемесячная выплата</li>
                             <li class="list__item list__item-true">Капитализация</li>
                             </li>
                         </ul>
@@ -450,7 +353,7 @@
                         <h2 class="investment__title">Вклад на 6 месяцев</h2>
                         <ul class="card__list">
                             <li class="list__item list__item-true">9% прибыли в месяц</li>
-                            <li class="list__item list__item-true">Ежимесячная выплата</li>
+                            <li class="list__item list__item-true">Ежемесячная выплата</li>
                             <li class="list__item list__item-true">Капитализация</li>
                             </li>
                         </ul>
@@ -461,6 +364,52 @@
                 </div>
             </div>
         </div>
+    </section>
+    <!-- statistic -->
+    <section class="statistic text-center">
+        <div class="gray"></div>
+        <img src="https://wallscloud.net/wallpaper/textures/Zelyoniy-Fon/pX4N/1920x1080/download" alt="" class="statistic__bg">
+        <div class="container">
+            <h2 class="title">Наша статистика</h2>
+            <div class="hand mb-sm-5"></div>
+            <!-- инфа -->
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-12 mb-5 mb-lg-0 text-center text-lg-left">
+                    <div class="block justify-content-start">
+                        <img src="/img/users.svg" alt="" class="block__img">
+                        <div class="block__info">
+                            <p class="numbers numscroller" data-min='1' data-max='484314' data-increment='2000'>484314</p>
+                            <p class="numbers__subtitle">Инвесторов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-5 mb-lg-0 text-center  text-clg-left ">
+                    <div class="block justify-content-start">
+                        <img src="/img/work.svg" alt="" class="block__img">
+                        <div class="block__info">
+                            <p class="numbers numscroller" data-min='1' data-max='4039' data-increment='100'>4039</p>
+                            <p class="numbers__subtitle">Инвесторов за сегодня</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-5 mb-lg-0 text-center text-lg-left">
+                    <div class="block  justify-content-start">
+                        <img src="/img/credit-card.svg" alt="" class="block__img">
+                        <div class="block__info">
+                            <p class="numbers numbers-dol numscroller" data-min='1' data-max='1537' data-increment='10'>1537
+                            </p>
+                            <p class="numbers__subtitle">Средняя прибыль </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Кнопки -->
+            <div class="statistic__buttons mt-5">
+                <a href="{{ route('login') }}" class="statistic__btn">Начать зарабатывать</a>
+                <a href="{{ route('login') }}" class="statistic__btn mt-3">Калькулятор прибыли</a>
+            </div>
+        </div>
+
     </section>
 </main>
 

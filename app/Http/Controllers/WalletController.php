@@ -96,6 +96,15 @@ class WalletController extends Controller
         $deposit->amount = $amount;
         $deposit->start_amount = $amount;
         $deposit->profit = Setting::get('deposit_' . $request->post('type'));
+
+        if ($deposit->amount >= 20000) {
+            $deposit->profit += 2;
+        } elseif($deposit->amount >= 15000) {
+            $deposit->profit += 1.5;
+        } elseif($deposit->amount >= 10000) {
+            $deposit->profit += 1;
+        }
+
         $deposit->capitalization = null != $request->post('capitalization');
         $deposit->user_id = $user->id;
         $deposit->user()->associate($user);

@@ -4,16 +4,13 @@
     <div class="cabinet__wrap2">
         <!-- хлебные крошки -->
         <div class="cabinet__breadcrumbs">
-            <p id="page__name">Deposit Creation</p>
+            <p id="page__name">Список депозитов</p>
             <ul class="breadcrumbs__list">
                 <li class="list__item">
-                    <a href="{{ route('wallet') }}"> Main </a>
+                    <a href="{{ route('wallet') }}"> Кошелёк </a>
                 </li>
                 <li class="list__item">
-                    <a href="{{ route('wallet') }}">Personal Account</a>
-                </li>
-                <li class="list__item">
-                    <a href="{{ route('wallet') }}">Deposit Creation</a>
+                    <a href="{{ route('wallet') }}">Создать депозит</a>
                 </li>
             </ul>
         </div>
@@ -22,35 +19,34 @@
                 <div class="container-fluid ">
                     <div class="row mb-5">
                         <div class="col-lg-6 mb-5 ">
-                            <p class="pretitle">Your Balance</p>
+                            <p class="pretitle">Ваш баланс</p>
                             <div class="card">
-                                <h2 class="card__title"><span id="first">First Name</span> <span id="last">last name</span></h2>
+{{--                                <h2 class="card__title"><span id="first">First Name</span> <span id="last">last name</span></h2>--}}
                                 <div class="card-body gray">
-                                    <h2 class="card-body__title">Your Available Balance <span id="money">{{ auth()->user()->balance }}&nbsp;$</span></h2>
+                                    <h2 class="card-body__title">Ваш баланс <span id="money">{{ auth()->user()->balance }}&nbsp;$</span></h2>
                                     <p class="card-body__desc">
-                                        Available Balance is the sum on your personal account, that is available for Widrawal or Another
-                                        Deposit.
+                                        Сумма на вашем счету, доступная для вывода или создания новых депозитов
                                     </p>
                                 </div>
                                 <div class="card-footer">
                                     <div class="footer__links">
-                                        <a href="#" class="link-button">Deposit Funds</a>
-                                        <a href="{{route('wallet')}}" class="link-button green">NEW Deposit</a>
-                                        <a href="{{ route('withdrawal') }}" class="link-button">Withdraw Funds</a>
+                                        <a href="#" class="link-button">Список депозитов</a>
+                                        <a href="{{route('wallet')}}" class="link-button green">Новый депозит</a>
+                                        <a href="{{ route('withdrawal') }}" class="link-button">Вывод средств</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <p class="pretitle text-center">Information About Your Deposits</p>
+                            <p class="pretitle text-center">Информация о депозитах</p>
                             <div class="deposit-widget__wrap">
                                 <div class="widget">
                     <span class="info">i
                       <div class="info__hover info__hover-long">
-                        The Total amount you have Invested with FTF
+                        Всего инвестировано
                       </div>
                     </span>
-                                    <h3 class="widget__name">TOTAL DEPOSITED</h3>
+                                    <h3 class="widget__name">Сумма инвестиций</h3>
                                     <div class="widget__content-wrap">
                                         <svg width="64" height="56" viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -62,12 +58,7 @@
                                     </div>
                                 </div>
                                 <div class="widget">
-                    <span class="info">i
-                      <div class="info__hover info__hover-long">
-                        Total amount of funds Withdrawn
-                      </div>
-                    </span>
-                                    <h3 class="widget__name">TOTAL WITHDRAWN</h3>
+                                    <h3 class="widget__name">Всего выведено</h3>
                                     <div class="widget__content-wrap">
                                         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -78,12 +69,7 @@
                                     </div>
                                 </div>
                                 <div class="widget">
-                    <span class="info">i
-                      <div class="info__hover info__hover-long">
-                        Total amount of all active deposits
-                      </div>
-                    </span>
-                                    <h3 class="widget__name">ACTIVE DEPOSITS</h3>
+                                    <h3 class="widget__name">Активные депозиты</h3>
                                     <div class="widget__content-wrap">
                                         <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -99,10 +85,10 @@
                                 <div class="widget">
                     <span class="info">i
                       <div class="info__hover info__hover-long">
-                        Total amount of funds earned with a referral program
+                        Сумма заработанная в реферальной программе.
                       </div>
                     </span>
-                                    <h3 class="widget__name">AFFILIATE EARNINGS</h3>
+                                    <h3 class="widget__name">Прибыль от рефералов</h3>
                                     <div class="widget__content-wrap">
                                         <svg width="64" height="60" viewBox="0 0 64 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -116,7 +102,7 @@
                         </div>
                     </div>
 
-                    <p class="pretitle">LIST OF ACTIVE AND CLOSED DEPOSITS</p>
+                    <p class="pretitle">Список депозитов</p>
                     <div class="row">
                         <div class="col">
                             <div class="card-table-wrap">
@@ -185,10 +171,7 @@
                 </div>
             </div>
         </main>
-        <!-- футер -->
-        <footer class="cabinet__footer">
-            <p>Copyright © Future Technologies Company 2019</p>
-        </footer>
+
     </div>
 
 @stop
