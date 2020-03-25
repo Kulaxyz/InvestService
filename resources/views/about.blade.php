@@ -1,216 +1,146 @@
 @extends('layouts.visit')
-
+@section('meta')
+    <title>О Нас</title>
+@endsection
 @section('content')
-    <!-- about -->
-    <section class="about " id="about">
+    <!-- Breadcrumbs -->
+    <section class="breadcrumbs-custom bg-image context-dark section-overlay-1" style="background-image: url(images/breadcrumbs-image-1.jpg);">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="video__desc  wow fadeInLeft" data-wow-delay="0.5s">Компания FTC – команда,
-                        у каждого члена которой за плечами не менее 12 лет работы на разных позициях
-                        в сегменте инвестиционного бизнеса – от аудитора и аналитика отдела рисков до
-                        финансового директора инвестиционного банка. Формируя динамичный инвестиционный портфель,
-                        мы ежедневно применяем накопленный опыт в разных направлениях, и делаем упор на стартапы в сферах:
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <h2 class="title mt-sm-5">КАК МЫ ЗАРАБАТЫВАЕМ?</h2>
-                    <div class="block wow fadeInRight" data-wow-delay="0.5s">
-                        <img src="/img/research.svg" alt="">
-                        <div class="block__content">
-                            <h3 class="block__title">ИИ</h3>
-                            <p class="block__desc   wow fadeInRight">Patented IT Software based on Arfitificial Intelligence serves
-                                as a tool to
-                                generate stable income for our investors. Our productis in demand in its niche, and is used by our
-                                analysts and leading corporations, such as Huawei, Apple and Google <a href="#startaps"
-                                                                                                       id="more">More...</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="block wow fadeInRight" data-wow-delay="1s">
-                        <img src="/img/laptop.svg" alt="">
-                        <div class="block__content">
-                            <h3 class="block__title">Нефть</h3>
-                            <p class="block__desc">Today, IT projects in this area are in the spotlight of investors around the
-                                world. But these technologies interest us not only in themselves, we consider the prospects of their
-                                introduction in e-commerce and in the development of marketplaces.</p>
-                        </div>
-                    </div>
-                    <div class="block wow fadeInRight" data-wow-delay="1.5s">
-                        <img src="/img/layers.svg" alt="">
-                        <div class="block__content">
-                            <h3 class="block__title">Ценные металлы</h3>
-                            <p class="block__desc">
-                                With our connections, we can invest in the most Promising startups. We have a good portfolio of
-                                companies that are already profitable and generate income for our investors.
-                            </p>
-                        </div>
-                    </div>
+            <div class="breadcrumbs-custom__main">
+                <h1 class="breadcrumbs-custom-title">О Нас</h1>
+                <div class="breadcrumbs-custom__text">
+                    <h4>Кто мы и что мы делаем?</h4>
                 </div>
             </div>
+            <ul class="breadcrumbs-custom__path">
+                <li><a href="{{ route('index') }}">Домой</a></li>
+                <li class="active">О Нас</li>
+            </ul>
         </div>
     </section>
-    <!-- features	 -->
-    <section class="features">
-        <img src="/img/features__img.png" alt="" class=" purple features__img">
+
+    <!-- Welcome-->
+    <section class="section section-xl bg-white">
         <div class="container">
-            <h2 class="title">Преимущества Работы С Нами:
-            </h2>
-            <p class="subtitle">Почему мы?</p>
-            <div class="row">
-                <div class="col-lg-5 col-md-6">
-                    <div class="block wow fadeInUp " data-wow-delay="0.5s">
-                        <img src="/img/features_1.svg" alt="">
-                        <div>
-                            <h3 class="block__title">Стабильный доход без ристок</h3>
-                            <p class="block__desc">
-                                Возможность получения стабильной доходности, превышающей процентную ставку по банковским депозитам
-                            </p>
-                        </div>
-                    </div>
-                    <div class="block wow fadeInUp" data-wow-delay="0.5s">
-                        <img src="/img/features_2.svg" alt="">
-                        <div>
-                            <h3 class="block__title">Быстрый вывод средств</h3>
-                            <p class="block__desc">
-                                Мы знаем как важно иметь доступ к своим личным средствам,
-                                поэтому автоматизировали процесс вывода дивидендов до 24-х часов
-                            </p>
-                        </div>
+            <div class="row row-50 justify-content-center flex-md-row-reverse align-items-center">
+                <div class="col-md-10 col-lg-6">
+                    <p class="text-initial-letter">Добро пожаловать! Помните, что это коммерческий веб-сайт,
+                        на котором перечислены кошельки, биржи и информация, связанная с инвестициями.</p>
+                    <div class="divider-modern"></div>
+                    <p>Основанный в июне 2012 года, Rochacoin является кошельком и платформой для цифровой валюты, где
+                        Торговцы и потребители могут совершать сделки с новыми цифровыми валютами, такими как биткойны,
+                        эфириум и лайткойн. Биткойн - самая широко используемая альтернативная валюта в мире
+                        с общей рыночной капитализацией более 100 миллиардов долларов. Сеть биткойнов состоит из тысяч
+                        компьютеров, управляемых людьми по всему миру, которые делают эту криптовалюту безопасной .</p>
+                    <div class="group group-middle">
+                        <a class="button button-primary" href="{{ route('wallet') }}">
+                            Создать кошелёк
+                        </a>
+                        <a class="button button-default-outline" href="{{ route('contact') }}">Контакты</a>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-6 offset-lg-2	">
-                    <div class="block wow fadeInUp" data-wow-delay="0.5s">
-                        <img src="/img/features_3.svg" alt="">
-                        <div>
-                            <h3 class="block__title">Стратегии заработка</h3>
-                            <p class="block__desc">
-                                Эффективность инвестиционных стратегий и защита ваших денежных средств
-                                подтверждается многолетним опытом работы профессиональной команды инвесторов
-                            </p>
-                        </div>
-                    </div>
-                    <div class="block wow fadeInUp" data-wow-delay="0.5s">
-                        <img src="/img/features_4.svg" alt="">
-                        <div>
-                            <h3 class="block__title">Минимальная инвестиция - 10$</h3>
-                            <p class="block__desc">
-                                Вы сами определяете свои инвестиционные цели. Начните с небольшой суммы, основные депозитные предложения доступны от 10$.
-                            </p>
-                        </div>
+                <div class="col-md-10 col-lg-6">
+                    <div class="image-group-1"><img src="/images/about-image-1-399x307.jpg" alt="" width="399" height="307" data-parallax-scroll="{&quot;y&quot;: 110, &quot;from-scroll&quot;: 20, &quot;smoothness&quot;: 30 }"/><img class="shadow-sm" src="/images/about-image-2-421x332.jpg" alt="" width="421" height="332" data-parallax-scroll="{&quot;y&quot;: -50, &quot;from-scroll&quot;: 20, &quot;smoothness&quot;: 30}"/>
                     </div>
                 </div>
-            </div>
-            <div class="features__buttons">
-                <button class="features__buttons-reg mb-3" onclick="location.href='{{route('register')}}'">Регистрация</button>
-                <button class="features__buttons-calc" onclick="location.href='{{route('register')}}'">Калькулятор прибыли</button>
             </div>
         </div>
     </section>
 
-    <section class="bigSection" id="bigSection" style="margin-top: 20px !important;">
-        <!-- Информация о нас -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="info-block">
-                        <div class="info__top" style='background: linear-gradient(59.8deg,#008d31 0,#01380d 72.74%);'>КАК МЫ ЗАРАБАТЫВАЕМ?</div>
-                        <div class="info__content">
-                            <p>В основе нашей бизнес-модели лежит принцип 3-х уровневой диверсификации – ресурсов, инвестиций и рисков
+    <!-- News-->
+    <section class="section parallax-container section-md bg-gray-700 section-overlay-2 text-center text-lg-left" data-parallax-img="/images/home-parallax-2.jpg">
+        <div class="parallax-content">
+            <div class="container">
+                <div class="row row-30 flex-lg-row-reverse justify-content-center align-items-center">
+                    <div class="col-sm-10 col-lg-5">
+                        <div class="box-inset-2">
+                            <h6 class="wow fadeInRightSmall">В ЦЕНТРЕ ВНИМАНИЯ</h6>
+                            <h2 class="wow fadeInRightSmall" data-wow-delay=".1s">Последние <strong>новости</strong>
+                                по теме</h2>
+                            <p class="wow fadeInRightSmall" data-wow-delay=".2s">
+                                Читайте и делитель актуальными новостями!
                             </p>
-                            <p>
-                                Что это значит? Если мы инвестируем в один из нишевых проектов, то обязательно подбираем
-                                смежные проекты в этой же нише – менее рискованные и более короткие с точки зрения получения прибыли.
-                            </p>
-                            <p>
-                                При таком подходе к инвестированию мы параллельно наращиваем прибыль и дивиденды
-                                с уже существующих вложений в другие проекты, чтобы иметь финансовый баланс и гарантировать
-                                выплаты дивидендов нашим инвесторам в сроки.
-                            </p>
-                            <p>
-                                И этот финансовый баланс мы поддерживаем и гарантируем как средствами,
-                                привлеченными с нашей онлайн-платформы, так и из других источников,
-                                в том числе – собственными базовыми инвестициями.
-                            </p>
-                            <p>
-                                Помимо работы с рисками, бизнес-модель FTC – это четкая система прогнозированного
-                                заработка и бонусов. Как только вы зарегистрируетесь на нашем сайте,
-                                вы получаете от 5% в месяц от суммы вашей инвестиции, а также в качетсве бонуса от +1% до +2%
-                                к ставке согласно избранному вами тарифному плану. Все расчеты и выплаты происходят автоматически и абсолютно прозрачно.
-                            </p>
-                            <p>
-                                Такая бизнес-модель позволяет нашей компании не только работать стабильно
-                                и быть финансово устойчивой в очень изменчивых реалиях рынка, но и также дает
-                                нам возможность очень быстро принимать решения, быть мобильной и эффективной командой,
-                                ведь деньги не только не спят, но и не медлят.
-                            </p>
-                            <p>
-                                Более детально ознакомиться с нашими бизнес-пакетами, открытыми в рамках онлайн-платформы, вы можете в специальном разделе.
-                            </p>
+                            <a class="button button-primary wow fadeIn" data-wow-delay=".3s" href="{{ route('blog')}}">Читать все</a>
                         </div>
-                        <button class="info__btn" onclick="location.href='{{ route('login') }}'"><i class=" far fa-user"></i>
-                            Личный кабинет</button>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="post-minimal-group">
+                        @php
+                            $articles = \Backpack\NewsCRUD\app\Models\Article::orderBy('id', 'DESC')->limit(3)->get();
+                        @endphp
+                        @foreach($articles as $article)
+                            <!-- 1-->
+                                <!-- Owl Carousel-->
+                                <div class="owl-carousel" data-items="1" data-dots="false" data-nav="false" data-loop="true" data-margin="10" data-autoplay="true" data-mouse-drag="false" data-animation-in="fadeIn" data-animation-out="fadeOut" data-autoplay-timeout="4012">
+                                    <article class="post-minimal">
+                                        <time class="post-minimal__time" datetime="2018">{{ $article->created_at->diffForHumans() }}</time>
+                                        <p>{!! substr($article->title, 0, 150) !!}</p>
+                                    </article>
+                                </div>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
-                {{--            <div class="col-lg-3" id="documents">--}}
-                {{--                <div class="block wow zoomIn mb-5" data-wow-delay="0.5s" data-toggle="modal" data-target="#sertificate1">--}}
-                {{--                    <button data-toggle="modal" data-target="#sertificate1"><i class="fas fa-search"--}}
-                {{--                                                                               aria-hidden="true"></i></button>--}}
-                {{--                    <div class="white">--}}
-                {{--                        <p class="text-g">Document</p>--}}
-                {{--                        <p class="subtitle">Certificate Of Registration Of A Limited Partnership</p>--}}
-                {{--                    </div>--}}
-                {{--                    <div class="gradient"></div>--}}
-                {{--                    <img src="/img/sertificate1.jpg" alt="">--}}
-                {{--                </div>--}}
-                {{--                <div class="block wow zoomIn" data-wow-delay="0.5s" data-toggle="modal" data-target="#sertificate2">--}}
-                {{--                    <button data-toggle="modal" data-target="#sertificate2"><i class="fas fa-search"--}}
-                {{--                                                                               aria-hidden="true"></i></button>--}}
-                {{--                    <div class="white">--}}
-                {{--                        <p class="text-g">Document</p>--}}
-                {{--                        <p class="subtitle"> Official Documents</p>--}}
-                {{--                    </div>--}}
-                {{--                    <div class="gradient"></div>--}}
-                {{--                    <img src="/img/sertificate2.jpg" alt="">--}}
-                {{--                </div>--}}
-                {{--            </div>--}}
             </div>
         </div>
     </section>
-    <div class="modal fade" id="sertificate1" tabindex="-1" role="dialog" aria-labelledby="sertificate1Label"
-         aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" data-toggle="modal" data-target="#sertificate1">Sertificate
-                    </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+    <!-- Features-->
+    <section class="section bg-white text-center">
+        <div class="container">
+            <h6>Наши преимущества</h6>
+            <h2><span class="d-inline-block" style="max-width: 520px;">Какие плюсы работы с нами?</span></h2>
+            <div class="row row-bordered-1">
+                <div class="col-sm-6 col-lg-4 wow fadeIn">
+                    <!-- Box Minimal-->
+                    <article class="box-minimal"><span class="icon box-minimal__icon linearicons-lock"></span>
+                        <h4 class="box-minimal__title">Безопасно &amp; Надёжно</h4>
+                        <div class="box-minimal__divider"></div>
+                        <p>Будьте уверены в безопасновти вашего аккаунта и сохранности средств.</p>
+                    </article>
                 </div>
-                <div class="modal-body" role="document">
-                    <div class="modal-content modal-content-video">
-                        <img src="/img/sertificate1.jpg" alt="" class="sertificates__img">
-                    </div>
+                <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".1s">
+                    <!-- Box Minimal-->
+                    <article class="box-minimal"><span class="icon box-minimal__icon linearicons-cloud-upload"></span>
+                        <h4 class="box-minimal__title">Быстрый вывод</h4>
+                        <div class="box-minimal__divider"></div>
+                        <p>Средства быстро поступят на ваш счёт.</p>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+                    <!-- Box Minimal-->
+                    <article class="box-minimal"><span class="icon box-minimal__icon linearicons-umbrella2"></span>
+                        <h4 class="box-minimal__title">Помощь специалистов</h4>
+                        <div class="box-minimal__divider"></div>
+                        <p>Мы предоставляем круглосуточную поддержку наших клиентов.</p>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 wow fadeIn">
+                    <!-- Box Minimal-->
+                    <article class="box-minimal"><span class="icon box-minimal__icon linearicons-tablet2"></span>
+                        <h4 class="box-minimal__title">Мобильное приложение</h4>
+                        <div class="box-minimal__divider"></div>
+                        <p>Кошелёк в виде приложения (в разработке).</p>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".1s">
+                    <!-- Box Minimal-->
+                    <article class="box-minimal"><span class="icon box-minimal__icon linearicons-credit-card"></span>
+                        <h4 class="box-minimal__title">Персональный кошелёк</h4>
+                        <div class="box-minimal__divider"></div>
+                        <p>Лёгкий в использовании кошелёк для инвестиций.</p>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
+                    <!-- Box Minimal-->
+                    <article class="box-minimal"><span class="icon box-minimal__icon linearicons-sync"></span>
+                        <h4 class="box-minimal__title">Возможность пополнения</h4>
+                        <div class="box-minimal__divider"></div>
+                        <p>Вы можете добавить средства к размеру депозита.</p>
+                    </article>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- 2 -->
-    <div class="modal fade" id="sertificate2" tabindex="-1" role="dialog" aria-labelledby="sertificate2Label"
-         aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" data-toggle="modal" data-target="#sertificate2">Sertificate
-                    </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body" role="document">
-                    <div class="modal-content modal-content-video">
-                        <img src="/img/sertificate2.jpg" alt="" class="sertificates__img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
 @endsection

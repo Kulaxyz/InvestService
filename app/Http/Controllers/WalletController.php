@@ -99,10 +99,12 @@ class WalletController extends Controller
 
         if ($deposit->amount >= 20000) {
             $deposit->profit += 2;
-        } elseif($deposit->amount >= 15000) {
-            $deposit->profit += 1.5;
         } elseif($deposit->amount >= 10000) {
+            $deposit->profit += 1.5;
+        } elseif($deposit->amount >= 5000) {
             $deposit->profit += 1;
+        } elseif($deposit->amount >= 2000) {
+            $deposit->profit += 0.5;
         }
 
         $deposit->capitalization = null != $request->post('capitalization');

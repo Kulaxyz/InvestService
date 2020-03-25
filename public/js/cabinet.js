@@ -294,10 +294,12 @@ function bonus(value, procent) {
     let bonus = 0;
     if (value >= 20000) {
         bonus = 2;
-    } else if (value >= 15000) {
+    } else if (value >= 10000) {
         bonus = 1.5;
-    } else if (value >=10000) {
+    } else if (value >=5000) {
         bonus = 1;
+    } else if (value >=2000) {
+        bonus = 0.5;
     }
     $('#bonus').text('+'+bonus + '%');
     return procent + bonus;

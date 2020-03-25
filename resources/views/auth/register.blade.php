@@ -3,11 +3,11 @@
 
     <div class="col-lg-7 right">
             <div>
-                <h2 class="title">REGISTRATION</h2>
+                <h2 class="title">Регистрация</h2>
                 <form action="{{route('register')}}" method="POST" class="form form-2">
                     @csrf
                     <label for="name" class="error" id="wrongName"></label>
-                    <input id="name" name="name" type="text" class="name" placeholder="Name" value="{{old('name')}}"
+                    <input id="name" name="name" type="text" class="name" placeholder="Имя" value="{{old('name')}}"
                            @error('name')
                            data-error="true"
                            @enderror
@@ -20,7 +20,7 @@
                     required>
 
                     <label for="passw1" class="error" id="wrongPass"></label>
-                    <input name="password" type="password" id="passw1" class="password" placeholder="Password"
+                    <input name="password" type="password" id="passw1" class="password" placeholder="Пароль"
                        @error('password')
                          data-error='true'
                        @enderror
@@ -29,9 +29,9 @@
                        @error('password-confirm')
                            data-error="true"
                        @enderror
-                       placeholder="The password again " required>
+                       placeholder="Повторите пароль" required>
                     <label for="phoneNumb" class="error" id="wrongPhone"></label>
-                    <input name="phone" type="text" class="phone" placeholder="Phone number " value="{{old('phone')}}"
+                    <input name="phone" type="text" class="phone" placeholder="Номер телефона" value="{{old('phone')}}"
                        @error('phone')
                            data-error="true"
                        @enderror
@@ -45,15 +45,15 @@
                     <div class="check">
                         <input type="checkbox" id="checkbox" required>
                         <label id='label' for="checkbox" class="checkbox">
-                            I agree to the <a href="./rules.html"> terms </a> of using the Future Technologies Fund service
+                            Я согласен с <a href="{{ route('rules') }}">правилами</a> данного сервиса
                         </label>
                     </div>
                     <button type="submit" class="register">
-                        REGISTER
+                        Зарегистрироваться
                     </button>
                 </form>
                 <a href="{{ route('index') }}" class="bottom__text bottom__text-back">
-                    << Go Back</a> </div> </div>
+                    << Назад</a> </div> </div>
 @endsection
 @section('scripts')
 
@@ -105,7 +105,7 @@
         let nameError = name.getAttribute('data-error')
 
         if (emailError == 'true') {
-            labelMail.innerHTML = 'Mail error'
+            labelMail.innerHTML = 'Неверный Email или уже занят'
             email.classList.add('error-input')
             return false
         } else {
@@ -113,7 +113,7 @@
             email.classList.remove('error-input')
         }
         if (phoneError == 'true') {
-            labelPhone.innerHTML = 'Phone error, correct format is: +XXX-XXX-XXXX (without dashes)'
+            labelPhone.innerHTML = 'Неверный номер телефона, требуемый формат: +XXX-XXX-XXXX (без тире)'
             phone.classList.add('error-input')
             return false
         } else {
@@ -122,7 +122,7 @@
         }
 
         if (nameError == 'true') {
-            labelName.innerHTML = 'Name error'
+            labelName.innerHTML = 'Неверное имя'
             name.classList.add('error-input')
             return false
         } else {
@@ -132,7 +132,7 @@
 
         if (pasError == 'true') {
             console.log(labelPass, pasError)
-            labelPass.innerHTML = 'Passwords don`t match'
+            labelPass.innerHTML = 'Пароли не совпадают'
             pas1.classList.add('error-input')
             pas2.classList.add('error-input')
             return false

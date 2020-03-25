@@ -1,4 +1,5 @@
 <!-- This file is used to store sidebar items, starting with Backpack\Base 0.9.0 -->
+@if(backpack_user()->hasRole('admin'))
 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('dashboard') }}"><i class="fa fa-dashboard nav-icon"></i> {{ trans('backpack::base.dashboard') }}</a></li>
 <li class="nav-item nav-dropdown">
     <a class="nav-link nav-dropdown-toggle" href="#"><i class="nav-icon fa fa-group"></i> Авторизация</a>
@@ -8,7 +9,8 @@
         <li class="nav-item"><a class="nav-link" href="{{ backpack_url('permission') }}"><i class="nav-icon fa fa-key"></i> <span>Разрешения</span></a></li>
     </ul>
 </li>
-
+@endif
+@if(backpack_user()->hasRole('admin') || backpack_user()->can('edit_articles'))
 <li class="nav-item nav-dropdown">
     <a class="nav-link nav-dropdown-toggle" href="#"><i class="nav-icon fa fa-newspaper-o"></i>Новости</a>
     <ul class="nav-dropdown-items">
@@ -17,7 +19,9 @@
         <li class="nav-item"><a class="nav-link" href="{{ backpack_url('tag') }}"><i class="nav-icon fa fa-tag"></i>Теги</a></li>
     </ul>
 </li>
+@endif
 
+@if(backpack_user()->hasRole('admin'))
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('payment') }}'><i class='nav-icon fa fa-credit-card'></i><span>{{ trans_choice('custom.payment', 2) }}</span></a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('withdrawal') }}'><i class='nav-icon fa fa-dollar'></i> <span>{{ trans_choice('custom.withdrawal', 2) }}
             @php
@@ -37,3 +41,4 @@
 
         </span></a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('setting') }}'><i class='nav-icon fa fa-cog'></i> <span>Настройки</span></a></li>
+@endif

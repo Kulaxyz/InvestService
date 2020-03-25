@@ -2,8 +2,8 @@
 @section('content')
         <div class="col-lg-7 right">
             <div>
-                <h2 class="title">Sign in</h2>
-                <h3 class="subtitle">Use your FTF Account</h3>
+                <h2 class="title">Войти в кабинет</h2>
+                <h3 class="subtitle">Зарабатывайте вместе с нами</h3>
                 <form action="{{ route('login') }}" method="POST" class="form">
                     @csrf
                     <label for="email" class="error" id="wrongMail"></label>
@@ -14,7 +14,7 @@
                            required id="mail-error">
 
                     <label for="password" class="error" id="wrongPass"></label>
-                    <input name="password" type="password" id="password" class="password" placeholder="Password"
+                    <input name="password" type="password" id="password" class="password" placeholder="Пароль"
                            @error('password')
                            data-error='true'
                            @enderror
@@ -24,16 +24,16 @@
                         <br />
                     </div>
                     <div class="buttons">
-                        <button class="signIn">LOGIN</button>
-                        <button class="signUp" onclick="location.href='{{route('register')}}'; return false;">REGISTRATION</button>
+                        <button class="signIn">Войти</button>
+                        <button class="signUp" onclick="location.href='{{route('register')}}'; return false;">Регистрация</button>
                     </div>
                 </form>
                 <div class="bottom__wrap">
-                    <a href="{{route('password.request')}}" class="bottom__text">Forgot your password?</a>
-                    <a href="{{ route('index') }}" class="bottom__text">Still dont have an account? Open it right now!</a>
+                    <a href="{{route('password.request')}}" class="bottom__text">Забыли пароль?</a>
+                    <a href="{{ route('index') }}" class="bottom__text">До сих пор нет аккаута? Откройте его прямо сейчас!</a>
                 </div>
                 <a href="{{ route('wallet') }}" class="bottom__text bottom__text-back">
-                    << Go Back</a> </div> </div>
+                    << Назад</a> </div> </div>
         @endsection
 @section('scripts')
 
@@ -51,7 +51,7 @@
         let emailError = email.getAttribute('data-error')
 
         if (emailError == 'true') {
-            labelMail.innerHTML = 'Mail or password incorrect'
+            labelMail.innerHTML = 'Неверные логин или пароль'
             email.classList.add('error-input')
             pasw.classList.add('error-input')
             return false

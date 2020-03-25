@@ -22,7 +22,7 @@ Route::get('blog', 'PublicController@blog')->name('blog');
 Route::get('faq', 'PublicController@faq')->name('faq');
 Route::get('about', 'PublicController@about')->name('about');
 
-Route::view('reviews', 'reviews')->name('reviews');
+Route::view('contact', 'contact')->name('contact');
 Route::view('rules', 'rules')->name('rules');
 
 Route::group(['middleware' => 'auth'], function () {

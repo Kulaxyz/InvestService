@@ -20,8 +20,9 @@ class PublicController extends Controller
 
     public function blog()
     {
-        $articles = Article::with(['category', 'tags'])->orderBy('created_at', 'DESC')->get();
-        return view('blog', compact('articles'));
+        $articles = Article::with(['category', 'tags'])->orderBy('created_at', 'DESC')->simplePaginate(5);
+        $populars = Article::orderBy('views', 'DESC')->limit(5)->get();
+        return view('blog', compact('articles', 'populars'));
     }
 
     public function faq()
