@@ -22,7 +22,7 @@
                         <div class="balance card">
                             <div class="card-header card-header-white">
                                 ВАШ БАЛАНС
-                                <span class="info">i
+                                <span class="info">
                     <div class="info__hover">
                       Сумма на вашем счету, доступная для вывода или создания новых депозитов
                     </div>

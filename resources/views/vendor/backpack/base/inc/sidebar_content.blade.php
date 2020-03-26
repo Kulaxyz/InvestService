@@ -40,5 +40,14 @@
             @endif
 
         </span></a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('ticket') }}'><i class='nav-icon fa fa-retweet'></i><span>Заявки
+            @php
+                $count = App\Ticket::count();
+            @endphp
+            @if($count > 0)
+                <span class="badge badge-pill badge-danger">{{ $count }}</span>
+            @endif
+
+        </span></a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('setting') }}'><i class='nav-icon fa fa-cog'></i> <span>Настройки</span></a></li>
 @endif

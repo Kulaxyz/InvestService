@@ -58,11 +58,10 @@
                             <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-outer"><span></span>
                             </button>
                             <!-- RD Navbar Brand-->
-                            <div class="rd-navbar-brand"><a class="brand" href="{{ route('index') }}"><img class="brand-logo-dark"
-                                                                                                 src="/images/logo-default-125x45.png"
-                                                                                                 alt="" width="125"
-                                                                                                 height="45"
-                                                                                                 srcset="/images/logo-default-250x90.png 2x"/><img
+                            <div class="rd-navbar-brand"><a class="brand" href="{{ route('index') }}"><img class="top-logo brand-logo-dark"
+                                                                                                 src="/images/logo.jpg"
+                                                                                                 alt=""
+                                                                                                 height="45"/><img
                                         class="brand-logo-light" src="/images/logo-inverse-125x45.png" alt="" width="125"
                                         height="45" srcset="/images/logo-inverse-250x90.png 2x"/></a>
                             </div>
@@ -114,11 +113,25 @@
                                 <li class="rd-nav-item @if(\Route::current()->getName() == 'index') active @endif">
                                 <a class="rd-nav-link" href="{{ route('index') }}">Главная</a>
                                 </li>
-                                <li class="rd-nav-item @if(\Route::current()->getName() == 'faq') active @endif">
-                                    <a class="rd-nav-link" href="{{ route('faq') }}">F.A.Q.</a>
-                                </li>
                                 <li class="rd-nav-item @if(\Route::current()->getName() == 'about') active @endif">
                                     <a class="rd-nav-link" href="{{ route('about') }}">О Нас</a>
+                                </li>
+                                <li class="rd-nav-item  @if(\Route::current()->getName() == 'features')
+                                    active
+@elseif(\Route::current()->getName() == 'fields')
+                                    active
+@endif"><a class="rd-nav-link" href="{{ route('features') }}">Особенности</a>
+                                    <!-- RD Navbar Dropdown-->
+                                    <ul class="rd-menu rd-navbar-dropdown">
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{ route('features') }}">Особенности</a></li>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{ route('fields') }}">Направления</a></li>
+                                    </ul>
+                                </li>
+                                <li class="rd-nav-item ">
+                                    <a class="rd-nav-link" ></a>
+                                </li>
+                                <li class="rd-nav-item @if(\Route::current()->getName() == 'faq') active @endif">
+                                    <a class="rd-nav-link" href="{{ route('faq') }}">F.A.Q.</a>
                                 </li>
                                 <li class="rd-nav-item @if(\Route::current()->getName() == 'blog') active @endif">
                                     <a class="rd-nav-link" href="{{ route('blog') }}">Новости</a>
@@ -141,7 +154,13 @@
             <div class="row row-50">
                 <div class="col-lg-6">
                     <div class="unit unit-spacing-sm flex-column flex-sm-row align-items-sm-center">
-                        <div class="unit-left"><a class="brand" href="{{ route('index') }}"><img class="brand-logo-dark" src="/images/logo-default-125x45.png" alt="" width="125" height="45" srcset="/images/logo-default-250x90.png 2x"/><img class="brand-logo-light" src="/images/logo-inverse-125x45.png" alt="" width="125" height="45" srcset="/images/logo-inverse-250x90.png 2x"/></a>
+                        <div class="unit-left"><a class="brand" href="{{ route('index') }}">
+                                <img style="max-height: 60px"
+                                     class="brand-logo-dark" src="/images/logo.jpg" alt="" width="125" height="45"
+                                     srcset="/images/logo.jpg 2x"/>
+                                <img class="brand-logo-light"
+                                    src="/images/logo.jpg" alt="" width="125" height="45"
+                                     srcset="/images/logo.jpg 2x"/></a>
                         </div>
                         <div class="unit-body">
                             <p><span style="max-width: 380px;">Формируя динамичный инвестиционный портфель, мы ежедневно
@@ -149,18 +168,35 @@
                                     и делаем упор в разных сферах.</span></p>
                         </div>
                     </div>
-                    <div class="group group-lg group-middle">
-                        <p class="large">Наше комьюнити</p>
-                        <div class="group-item">
-                            <ul class="list-inline list-inline-sm">
-                                <li><a class="icon icon-lg link-default mdi mdi-facebook" href="#"></a></li>
-                                <li><a class="icon icon-lg link-default mdi mdi-twitter" href="#"></a></li>
-                                <li><a class="icon icon-lg link-default mdi mdi-youtube-play" href="#"></a></li>
-                                <li><a class="icon icon-lg link-default mdi mdi-instagram" href="#"></a></li>
-                            </ul>
-                        </div>
+{{--                    <div class="group group-lg group-middle">--}}
+{{--                        <p class="large">Наше комьюнити</p>--}}
+{{--                        <div class="group-item">--}}
+{{--                            <ul class="list-inline list-inline-sm">--}}
+{{--                                <li><a class="icon icon-lg link-default mdi mdi-facebook" href="#"></a></li>--}}
+{{--                                <li><a class="icon icon-lg link-default mdi mdi-twitter" href="#"></a></li>--}}
+{{--                                <li><a class="icon icon-lg link-default mdi mdi-youtube-play" href="#"></a></li>--}}
+{{--                                <li><a class="icon icon-lg link-default mdi mdi-instagram" href="#"></a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+                </div>
+                <div class="col-lg-6">
+                    <div class="box-inset-3">
+                        <h4>Оставьте свой E-mail и мы с вами свяжемся</h4>
+                        <!-- RD Mailform-->
+                        <form class="form form-lg form_light form-inline"  method="post" action="{{ route('ticket') }}">
+                            @csrf
+                            <div class="form-wrap">
+                                <input class="form-input" id="footer-subscribe-form-email" type="email" name="email" data-constraints="@Email @Required">
+                                <label class="form-label" for="footer-subscribe-form-email">Введите e-mail</label>
+                            </div>
+                            <div class="form-button">
+                                <button class="button button-color-2" type="submit">Подписаться</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
             </div>
         </div>
         <hr>
@@ -193,6 +229,28 @@
     <!-- Javascript1-->
     <script src="/js/core.min.js"></script>
     <script src="/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
 @yield('scripts')
+<script>
+    @if(session()->has('success-message'))
+    Swal.fire({
+        title: 'Успешно!',
+        text: '{!! \Session::get('success-message') !!}',
+        icon: 'success',
+        confirmButtonText: 'OK'
+    });
+    @elseif(session()->has('error-message'))
+    Swal.fire({
+        title: 'Ошибка!',
+        text: '{!! session()->get('error-message') !!}',
+        icon: 'fail',
+        confirmButtonText: 'OK'
+    });
+    @endif
+</script>
 </body>
 </html>

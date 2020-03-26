@@ -26,15 +26,15 @@
 {{--                                <div class="slick-slide-caption__footer"><a class="button button-primary" href="about-us.html">Read More</a></div>--}}
 {{--                            </div>--}}
 {{--                        </div>--}}
-{{--                        <div>--}}
-{{--                            <div class="slick-slide-caption">--}}
-{{--                                <h6>A perfect payment tool</h6>--}}
-{{--                                <h1>Pay everywhere</h1>--}}
-{{--                                <h3 class="decoration-heading-1">For Goods and Services</h3>--}}
-{{--                                <p>Like any other modern currency, Bitcoin is available everywhere at any time for transactions and payments.</p>--}}
-{{--                                <div class="slick-slide-caption__footer"><a class="button button-primary" href="about-us.html">Read More</a></div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                        <div>
+                            <div class="slick-slide-caption">
+                                <h6>Идеальный инструмент для заработка</h6>
+                                <h1>Безопасные инвестиции</h1>
+                                <h3 class="decoration-heading-1">Развивающеся сферы</h3>
+                                <p>Мы выбираем самые прибыльные сделки на бирже и позволяем вам заработать всесте с нами.</p>
+                                <div class="slick-slide-caption__footer"><a class="button button-primary" href="{{ route('about') }}">Читать дальше</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="slick-slider carousel-child slick-animation-scale" id="slider-child-carousel" data-for=".carousel-parent" data-arrows="false" data-loop="true" data-dots="false" data-swipe="false" data-fade="true" data-items="1" data-slide-to-scroll="1" data-autoplay="true">
@@ -44,9 +44,9 @@
 {{--                    <div class="item">--}}
 {{--                        <div class="slick-img" style="background-image: url(/images/slider-slide-2.jpg);"></div>--}}
 {{--                    </div>--}}
-{{--                    <div class="item">--}}
-{{--                        <div class="slick-img" style="background-image: url(/images/slider-slide-3.jpg);"></div>--}}
-{{--                    </div>--}}
+                    <div class="item">
+                        <div class="slick-img" style="background-image: url(/images/slider-slide-3.jpg);"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -84,21 +84,21 @@
                 <div class="row row-50">
                     <div class="col-sm-6 col-md-4">
                         <article class="box-elegant">
-                            <div class="box-elegant__header"><span class="icon box-elegant__icon linearicons-bag-euro"></span>
-                                <p class="box-elegant__title">Валюта</p>
+                            <div class="box-elegant__header"><span class="icon box-elegant__icon linearicons-graph"></span>
+                                <p class="box-elegant__title">Акции</p>
                             </div>
                             <div class="box-elegant__text">
-                                <p>Мы зарабатываем на валютных парах.</p>
+                                <p>На акциях крупных корпорация.</p>
                             </div>
                         </article>
                     </div>
                     <div class="col-sm-6 col-md-4">
                         <article class="box-elegant">
-                            <div class="box-elegant__header"><span class="icon box-elegant__icon linearicons-download"></span>
-                                <p class="box-elegant__title">Металлы</p>
+                            <div class="box-elegant__header"><span class="icon box-elegant__icon linearicons-bag-euro"></span>
+                                <p class="box-elegant__title">Валюта</p>
                             </div>
                             <div class="box-elegant__text">
-                                <p>Cтабильные доходы от драгоценных металлов.</p>
+                                <p>Мы зарабатываем на валютных парах.</p>
                             </div>
                         </article>
                     </div>
@@ -115,11 +115,11 @@
                     </div>
                     <div class="col-sm-6 col-md-4">
                         <article class="box-elegant">
-                            <div class="box-elegant__header"><span class="icon box-elegant__icon linearicons-graph"></span>
-                                <p class="box-elegant__title">Акции</p>
+                            <div class="box-elegant__header"><span class="icon box-elegant__icon linearicons-download"></span>
+                                <p class="box-elegant__title">Металлы</p>
                             </div>
                             <div class="box-elegant__text">
-                                <p>На акциях крупных корпорация.</p>
+                                <p>Cтабильные доходы от драгоценных металлов.</p>
                             </div>
                         </article>
                     </div>
@@ -146,9 +146,45 @@
                 </div>
             </div>
         </section>
+        <!-- What bitcoin offers you-->
+        <section class="section section-xl bg-white text-center text-lg-left">
+            <div class="container">
+                <div class="row row-30">
+                    <div class="col-lg-5">
+                        <div class="row row-30">
+                            <div class="col-12">
+                                <h6>Что мы вам предлагаем</h6>
+                                <h2>Хотите знать <strong>как</strong> <br class="d-none d-lg-inline-block"> мы зарабатываем?</h2>
+                                <p><span style="max-width: 430px;">Одним из способов дохода являются инвестиции в криптовалюту.</span></p>
+                            </div>
+                            <div class="col-12 wow fadeInUpSmall">
+                                <!-- Link Box--><a class="link-box" href="{{ route('wallet') }}"><span class="icon link-box__icon linearicons-mouse-right"></span>
+                                    <div class="link-box__main">
+                                        <h4>Создать кошелёк</h4>
+                                        <p>Зарегистрируйтесь и начните зарабатывать в несколько кликов.</p>
+                                    </div></a>
+                            </div>
+                            <div class="col-12 wow fadeInUpSmall" data-wow-delay=".1s">
+                                <p>
+                                    Формируя динамичный инвестиционный портфель, мы ежедневно применяем накопленный опыт в разных направлениях, и делаем упор в разных сферах.
+                                </p>
+                                <p>Формируя динамичный инвестиционный портфель, мы ежедневно применяем накопленный опыт в разных направлениях, и делаем упор в разных сферах.
+                                </p>
+                                <p>Формируя динамичный инвестиционный портфель, мы ежедневно применяем накопленный опыт в разных направлениях, и делаем упор в разных сферах.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 wow fadeInUpSmall" data-wow-delay=".1s">
+                        <!-- crypto chart-->
+                        <div class="crypto-currency-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- How it works-->
-        <section class="section section-lg bg-gray-100 text-center">
+        <section class="section section-lg bg-gray-100 text-center" style="padding-top: 20px !important;">
             <div class="container container-md-smaller">
                 <div class="row justify-content-center">
                     <div class="col-sm-10 col-md-12">
@@ -192,7 +228,108 @@
                         </div>
                     </li>
                 </ul>
+                <div style="margin-top: 60px" class="justify-content-center"><a class="button button-primary" href="{{ route('wallet') }}">
+                        Создать кошелёк
+                    </a></div>
             </div>
+        </section>
+
+        <!-- Be one step ahead-->
+        <section class="section bg-gray-700 particles-js-outer section-overlay-1">
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row justify-content-center justify-content-xl-between align-items-end">
+                    <div class="col-md-10 col-lg-6">
+                        <div class="section-lg">
+                            <h6 class="wow fadeInLeftSmall">Будьте на шаг впереди</h6>
+                            <h2 class="wow fadeInLeftSmall" data-wow-delay=".1s">Получение <strong>80%</strong> от знаний наших экспертов просто.</h2>
+                            <p class="lead wow fadeInLeftSmall" data-wow-delay=".15s">Присоединяйтесь к БЕСПЛАТНОМУ курсу по инвестициям..</p>
+                            <!-- RD Mailform-->
+                            <form class="form form-lg form-inline wow fadeInLeftSmall" data-wow-delay=".2s" method="post" action="{{ route('ticket') }}">
+                                @csrf
+                                <div class="form-wrap">
+                                    <input class="form-input" id="subscribe-form-email" type="email" name="email" data-constraints="@Email @Required">
+                                    <label class="form-label" for="subscribe-form-email">Введите e-mail</label>
+                                </div>
+                                <div class="form-button">
+                                    <button class="button button-primary" type="submit">Отправить</button>
+                                </div>
+                            </form>
+                            <p class="wow fadeInLeftSmall" data-wow-delay=".25s"><span style="opacity: .25;">*Мы обещаем не слать спам.</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-lg-6 col-xl-5">
+                        <div class="bitcoin-widget bitcoin-widget_windowed bitcoin-widget_windowed-1"><img class="bitcoin-widget__top-panel" src="/images/decoration-browser-panel-564x36.png" alt="" width="564" height="36"/>
+                            <div class="btcwdgt-chart" data-bw-theme="dark"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feedback-->
+        <section class="section bg-gray-100 slider-group_testimonials">
+            <div class="slick-slider carousel-child wow fadeIn" id="child-carousel" data-for=".carousel-parent" data-arrows="false" data-loop="true" data-dots="false" data-swipe="false" data-fade="true" data-swiper="true" data-items="1">
+                <div class="item"><img src="/images/home-testimonials-1-744x623.png" alt="" width="744" height="623"/>
+                </div>
+                <div class="item"><img src="/images/home-testimonials-2-744x623.png" alt="" width="744" height="623"/>
+                </div>
+                <div class="item"><img src="/images/home-testimonials-3-744x623.png" alt="" width="744" height="623"/>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-md-8 col-lg-7">
+                        <h2><strong>Что</strong> говорят люди</h2>
+                        <div class="slick-slider carousel-parent" data-arrows="false" data-loop="false" data-dots="true" data-swipe="false" data-items="1" data-fade="true" data-child="#child-carousel" data-for="#child-carousel">
+                            <div class="item">
+                                <blockquote class="quote-classic">
+                                    <div class="quote-classic__text">
+                                        <p>Я выбрал этот сайт для торговли биткойнами и несколькими другими валютами.
+                                            У них есть четкая торговая площадка с хорошей репутацией за последние годы
+                                            и множество направлений обмена. Большинство людей, которых я знаю, используют это.
+                                            Я надеюсь больше работать с Rochacoin в будущем, и я буду рекомендовать этот
+                                            сайт всем своим коллегам и друзьям.</p>
+                                    </div>
+                                    <div class="quote-classic__meta">
+                                        <cite class="quote-classic__cite">Брайан Томпсон</cite>
+                                        <p class="quote-classic__info">Бизнесмэн</p>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <div class="item">
+                                <blockquote class="quote-classic">
+                                    <div class="quote-classic__text">
+                                        <p>Как эксперт по финансам, я искренне верю, что криптовалюты - это будущее.
+                                            Я рада сказать, что ваш сайт является идеальным источником для новичков
+                                            и профессионалы в торговле и обмене биткойнов, поскольку это позволяет лучше
+                                            понять, как это работает. Что еще важнее, ваша команда всегда готова
+                                            помочь, если у пользователя есть какие-либо вопросы .</p>
+                                    </div>
+                                    <div class="quote-classic__meta">
+                                        <cite class="quote-classic__cite">Джейн Миллан</cite>
+                                        <p class="quote-classic__info">Финансовый Эксперт</p>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <div class="item">
+                                <blockquote class="quote-classic">
+                                    <div class="quote-classic__text">
+                                        <p>Я начал торговать биткойнами как хобби, и твой сайт был единственным источником
+                                            Я нашел в Интернете, чтобы быть полностью надежным. Ваша команда поддержки помогла
+                                            я избегаю всех поворотов, которые казались рискованными, и теперь я могу успешно
+                                            Обмен и обмен моих биткойнов на вашем сайте. Спасибо за вашу помощь и понимание!</p>
+                                    </div>
+                                    <div class="quote-classic__meta">
+                                        <cite class="quote-classic__cite">Сэм Вильсон</cite>
+                                        <p class="quote-classic__info">Дизайнер </p>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-extra-large">Отзывы</p>
         </section>
 
         <!-- CTA-->
@@ -201,7 +338,7 @@
                 <div class="container">
                     <div class="row row-30 align-items-center">
                         <div class="col-lg-9 wow fadeInLeftSmall">
-                            <h2>Создайте кошелёк с <strong>полным спектром</strong>, возможностей!</h2>
+                            <h2>Создайте кошелёк с <strong>полным спектром</strong> возможностей!</h2>
                             <p class="big">У нашей компания истользует много отраслей в инвестициях чтобы увеличить прибыль. Присоединяйтесь!</p>
                         </div>
                         <div class="col-lg-3 wow fadeInRightSmall text-lg-right">
@@ -234,41 +371,41 @@
         </section>
 
         <!-- News-->
-        <section class="section parallax-container section-md bg-gray-700 section-overlay-2 text-center text-lg-left" data-parallax-img="/images/home-parallax-2.jpg">
-            <div class="parallax-content">
-                <div class="container">
-                    <div class="row row-30 flex-lg-row-reverse justify-content-center align-items-center">
-                        <div class="col-sm-10 col-lg-5">
-                            <div class="box-inset-2">
-                                <h6 class="wow fadeInRightSmall">В ЦЕНТРЕ ВНИМАНИЯ</h6>
-                                <h2 class="wow fadeInRightSmall" data-wow-delay=".1s">Последние <strong>новости</strong>
-                                    по теме</h2>
-                                <p class="wow fadeInRightSmall" data-wow-delay=".2s">
-                                    Читайте и делитель актуальными новостями!
-                                </p>
-                                <a class="button button-primary wow fadeIn" data-wow-delay=".3s" href="{{ route('blog')}}">Читать все</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="post-minimal-group">
-                            @php
-                                $articles = \Backpack\NewsCRUD\app\Models\Article::orderBy('id', 'DESC')->limit(3)->get();
-                            @endphp
-                            @foreach($articles as $article)
-                            <!-- 1-->
-                                <!-- Owl Carousel-->
-                                <div class="owl-carousel" data-items="1" data-dots="false" data-nav="false" data-loop="true" data-margin="10" data-autoplay="true" data-mouse-drag="false" data-animation-in="fadeIn" data-animation-out="fadeOut" data-autoplay-timeout="4012">
-                                    <article class="post-minimal">
-                                        <time class="post-minimal__time" datetime="2018">{{ $article->created_at->diffForHumans() }}</time>
-                                        <p>{!! substr($article->title, 0, 150) !!}</p>
-                                    </article>
-                                </div>
-                            @endforeach
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+{{--        <section class="section parallax-container section-md bg-gray-700 section-overlay-2 text-center text-lg-left" data-parallax-img="/images/home-parallax-2.jpg">--}}
+{{--            <div class="parallax-content">--}}
+{{--                <div class="container">--}}
+{{--                    <div class="row row-30 flex-lg-row-reverse justify-content-center align-items-center">--}}
+{{--                        <div class="col-sm-10 col-lg-5">--}}
+{{--                            <div class="box-inset-2">--}}
+{{--                                <h6 class="wow fadeInRightSmall">В ЦЕНТРЕ ВНИМАНИЯ</h6>--}}
+{{--                                <h2 class="wow fadeInRightSmall" data-wow-delay=".1s">Последние <strong>новости</strong>--}}
+{{--                                    по теме</h2>--}}
+{{--                                <p class="wow fadeInRightSmall" data-wow-delay=".2s">--}}
+{{--                                    Читайте и делитель актуальными новостями!--}}
+{{--                                </p>--}}
+{{--                                <a class="button button-primary wow fadeIn" data-wow-delay=".3s" href="{{ route('blog')}}">Читать все</a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-lg-7">--}}
+{{--                            <div class="post-minimal-group">--}}
+{{--                            @php--}}
+{{--                                $articles = \Backpack\NewsCRUD\app\Models\Article::orderBy('id', 'DESC')->limit(3)->get();--}}
+{{--                            @endphp--}}
+{{--                            @foreach($articles as $article)--}}
+{{--                            <!-- 1-->--}}
+{{--                                <!-- Owl Carousel-->--}}
+{{--                                <div class="owl-carousel" data-items="1" data-dots="false" data-nav="false" data-loop="true" data-margin="10" data-autoplay="true" data-mouse-drag="false" data-animation-in="fadeIn" data-animation-out="fadeOut" data-autoplay-timeout="4012">--}}
+{{--                                    <article class="post-minimal">--}}
+{{--                                        <time class="post-minimal__time" datetime="2018">{{ $article->created_at->diffForHumans() }}</time>--}}
+{{--                                        <p>{!! substr($article->title, 0, 150) !!}</p>--}}
+{{--                                    </article>--}}
+{{--                                </div>--}}
+{{--                            @endforeach--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </section>--}}
     </div>
 @endsection

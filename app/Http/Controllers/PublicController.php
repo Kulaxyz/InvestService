@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Ticket;
 use Backpack\NewsCRUD\app\Models\Article;
+use Cviebrock\EloquentSluggable\Tests\Models\Post;
 use Illuminate\Http\Request;
 
 class PublicController extends Controller
@@ -28,6 +30,19 @@ class PublicController extends Controller
     public function faq()
     {
         return view('faq');
+    }
+
+    public function ticket(Request $request)
+    {
+        if (!$request->email) {
+            session()->flash('error-message', 'Поле email обязательно для заполнения!');
+            return redirect()->back();
+        }
+//        dd($request->except('_token'));
+        $ticket = Ticket::create($request->except('_token'));
+
+        session()->flash('success-message', 'Заявка #'.$ticket->id.' успешно создана.');
+        return redirect()->back();
     }
 
 }

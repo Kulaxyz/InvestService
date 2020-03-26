@@ -23,7 +23,10 @@ Route::get('faq', 'PublicController@faq')->name('faq');
 Route::get('about', 'PublicController@about')->name('about');
 
 Route::view('contact', 'contact')->name('contact');
+Route::post('ticket', 'PublicController@ticket')->name('ticket');
+Route::view('features', 'features')->name('features');
 Route::view('rules', 'rules')->name('rules');
+Route::view('fields', 'fields')->name('fields');
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('logout', 'Auth\LoginController@logout')->name('logout');

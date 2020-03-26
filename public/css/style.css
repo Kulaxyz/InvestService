@@ -4,6 +4,9 @@
 * Trunk version 2.0.0
 *
 */
+html {
+    scroll-behavior: smooth;
+}
 a:focus,
 button:focus {
 	outline: none !important;
@@ -8608,7 +8611,7 @@ html.rd-navbar-fixed-linked .page {
 	position: fixed;
 	top: 0;
 	right: 0;
-	width: 60px;
+	width: 70px;
 	height: 56px;
 	background: #001b3b;
 }
@@ -14234,3 +14237,38 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 /*rtl:end:ignore*/
+.tabsPeriodsContainer {
+    display: none;
+}
+button.rd-sidebar__button:hover {
+    background: #00B9D4;
+}
+
+.box-minimal:hover .box-minimal__icon {
+    color: #00B9D4;
+}
+.features a.box-minimal {
+    cursor: pointer;
+}
+.fields__block{
+    margin-top: 60px;
+}
+.features a.box-minimal {
+    color: black;
+}
+.top-logo {
+    max-height: 75px;
+}
+@media screen and (max-width: 1024px) {
+    .top-logo {
+        max-height: 60px;
+    }
+}
+@media (max-width: 359px) {
+    .rd-navbar-classic.rd-navbar-fixed .rd-sidebar__button {
+        width: 80px;
+    }
+    .top-logo {
+        max-height: 55px;
+    }
+}

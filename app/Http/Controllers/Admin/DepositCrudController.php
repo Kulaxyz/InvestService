@@ -27,6 +27,7 @@ class DepositCrudController extends CrudController
     {
         $this->crud->setModel(Deposit::class);
         $this->crud->setEntityNameStrings(trans_choice('custom.deposit',1), trans_choice('custom.deposit',2));
+        $this->crud->setEntityNameStrings(trans_choice('custom.deposit',1), trans_choice('custom.deposit',2));
         $this->crud->setRoute(backpack_url('deposit'));
 //        $this->crud->denyAccess('delete');
         $this->crud->allowAccess('show');

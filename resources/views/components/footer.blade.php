@@ -7,11 +7,10 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-5">
                     <h2 class="col__name">
-                        <img src="/img/logo2.png" alt="" class="footer__logo">
+                        <img style="max-height: 70px" src="/images/logo.jpg" alt="" class="footer__logo">
                     </h2>
                     <div class="col__content">
                         <p>Формируя динамичный инвестиционный портфель, мы ежедневно применяем накопленный опыт в разных направлениях, и делаем упор на стартапы в разных сферах.
-
                         </p>
                     </div>
                 </div>
@@ -20,9 +19,9 @@
                     <nav class="col__content">
                         <div class="nav__wrap">
                             <ul class="nav">
-                                <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                                <li class="nav__item"><a href="{{ route('index') }}" class="nav__link">Главная</a></li>
                                 <li class="nav__item"><a href="{{ route('about') }}" class="nav__link">О Компании</a></li>
-                                <li class="nav__item"><a href="{{ route('rules') }}" class="nav__link">Customer Agreement</a></li>
+                                <li class="nav__item"><a href="{{ route('rules') }}" class="nav__link">Правила Сервиса</a></li>
                             </ul>
                             <ul class="nav">
                                 <li class="nav__item"><a href="{{ route('blog') }}" class="nav__link">Новости</a></li> <br>

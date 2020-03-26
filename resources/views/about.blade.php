@@ -85,59 +85,85 @@
         </div>
     </section>
 
-    <!-- Features-->
-    <section class="section bg-white text-center">
+    <!-- Feedback-->
+    <section class="section bg-gray-100 slider-group_testimonials">
+        <div class="slick-slider carousel-child wow fadeIn" id="child-carousel" data-for=".carousel-parent" data-arrows="false" data-loop="true" data-dots="false" data-swipe="false" data-fade="true" data-swiper="true" data-items="1">
+            <div class="item"><img src="/images/home-testimonials-1-744x623.png" alt="" width="744" height="623"/>
+            </div>
+            <div class="item"><img src="/images/home-testimonials-2-744x623.png" alt="" width="744" height="623"/>
+            </div>
+            <div class="item"><img src="/images/home-testimonials-3-744x623.png" alt="" width="744" height="623"/>
+            </div>
+        </div>
         <div class="container">
-            <h6>Наши преимущества</h6>
-            <h2><span class="d-inline-block" style="max-width: 520px;">Какие плюсы работы с нами?</span></h2>
-            <div class="row row-bordered-1">
-                <div class="col-sm-6 col-lg-4 wow fadeIn">
-                    <!-- Box Minimal-->
-                    <article class="box-minimal"><span class="icon box-minimal__icon linearicons-lock"></span>
-                        <h4 class="box-minimal__title">Безопасно &amp; Надёжно</h4>
-                        <div class="box-minimal__divider"></div>
-                        <p>Будьте уверены в безопасновти вашего аккаунта и сохранности средств.</p>
-                    </article>
+            <div class="row justify-content-end">
+                <div class="col-md-8 col-lg-7">
+                    <h2><strong>Что</strong> говорят люди</h2>
+                    <div class="slick-slider carousel-parent" data-arrows="false" data-loop="false" data-dots="true" data-swipe="false" data-items="1" data-fade="true" data-child="#child-carousel" data-for="#child-carousel">
+                        <div class="item">
+                            <blockquote class="quote-classic">
+                                <div class="quote-classic__text">
+                                    <p>Я выбрал этот сайт для торговли биткойнами и несколькими другими валютами.
+                                        У них есть четкая торговая площадка с хорошей репутацией за последние годы
+                                        и множество направлений обмена. Большинство людей, которых я знаю, используют это.
+                                        Я надеюсь больше работать с Rochacoin в будущем, и я буду рекомендовать этот
+                                        сайт всем своим коллегам и друзьям.</p>
+                                </div>
+                                <div class="quote-classic__meta">
+                                    <cite class="quote-classic__cite">Брайан Томпсон</cite>
+                                    <p class="quote-classic__info">Бизнесмэн</p>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="item">
+                            <blockquote class="quote-classic">
+                                <div class="quote-classic__text">
+                                    <p>Как эксперт по финансам, я искренне верю, что криптовалюты - это будущее.
+                                        Я рада сказать, что ваш сайт является идеальным источником для новичков
+                                        и профессионалы в торговле и обмене биткойнов, поскольку это позволяет лучше
+                                        понять, как это работает. Что еще важнее, ваша команда всегда готова
+                                        помочь, если у пользователя есть какие-либо вопросы .</p>
+                                </div>
+                                <div class="quote-classic__meta">
+                                    <cite class="quote-classic__cite">Джейн Миллан</cite>
+                                    <p class="quote-classic__info">Финансовый Эксперт</p>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <div class="item">
+                            <blockquote class="quote-classic">
+                                <div class="quote-classic__text">
+                                    <p>Я начал торговать биткойнами как хобби, и твой сайт был единственным источником
+                                        Я нашел в Интернете, чтобы быть полностью надежным. Ваша команда поддержки помогла
+                                        я избегаю всех поворотов, которые казались рискованными, и теперь я могу успешно
+                                        Обмен и обмен моих биткойнов на вашем сайте. Спасибо за вашу помощь и понимание!</p>
+                                </div>
+                                <div class="quote-classic__meta">
+                                    <cite class="quote-classic__cite">Сэм Вильсон</cite>
+                                    <p class="quote-classic__info">Дизайнер </p>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".1s">
-                    <!-- Box Minimal-->
-                    <article class="box-minimal"><span class="icon box-minimal__icon linearicons-cloud-upload"></span>
-                        <h4 class="box-minimal__title">Быстрый вывод</h4>
-                        <div class="box-minimal__divider"></div>
-                        <p>Средства быстро поступят на ваш счёт.</p>
-                    </article>
-                </div>
-                <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
-                    <!-- Box Minimal-->
-                    <article class="box-minimal"><span class="icon box-minimal__icon linearicons-umbrella2"></span>
-                        <h4 class="box-minimal__title">Помощь специалистов</h4>
-                        <div class="box-minimal__divider"></div>
-                        <p>Мы предоставляем круглосуточную поддержку наших клиентов.</p>
-                    </article>
-                </div>
-                <div class="col-sm-6 col-lg-4 wow fadeIn">
-                    <!-- Box Minimal-->
-                    <article class="box-minimal"><span class="icon box-minimal__icon linearicons-tablet2"></span>
-                        <h4 class="box-minimal__title">Мобильное приложение</h4>
-                        <div class="box-minimal__divider"></div>
-                        <p>Кошелёк в виде приложения (в разработке).</p>
-                    </article>
-                </div>
-                <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".1s">
-                    <!-- Box Minimal-->
-                    <article class="box-minimal"><span class="icon box-minimal__icon linearicons-credit-card"></span>
-                        <h4 class="box-minimal__title">Персональный кошелёк</h4>
-                        <div class="box-minimal__divider"></div>
-                        <p>Лёгкий в использовании кошелёк для инвестиций.</p>
-                    </article>
-                </div>
-                <div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay=".2s">
-                    <!-- Box Minimal-->
-                    <article class="box-minimal"><span class="icon box-minimal__icon linearicons-sync"></span>
-                        <h4 class="box-minimal__title">Возможность пополнения</h4>
-                        <div class="box-minimal__divider"></div>
-                        <p>Вы можете добавить средства к размеру депозита.</p>
-                    </article>
+            </div>
+        </div>
+        <p class="text-extra-large">Отзывы</p>
+    </section>
+    <!-- CTA-->
+    <section class="section parallax-container section-md bg-gray-700 text-center section-overlay-1 text-lg-left" data-parallax-img="/images/home-parallax-1.jpg">
+        <div class="parallax-content">
+            <div class="container">
+                <div class="row row-30 align-items-center">
+                    <div class="col-lg-9 wow fadeInLeftSmall">
+                        <h2>Создайте кошелёк с <strong>полным спектром</strong> возможностей!</h2>
+                        <p class="big">У нашей компания истользует много отраслей в инвестициях чтобы увеличить прибыль. Присоединяйтесь!</p>
+                    </div>
+                    <div class="col-lg-3 wow fadeInRightSmall text-lg-right">
+                        <a href="{{ route('register') }}">
+                            <button class="button button-default-outline">Зарегистрироваться сейчас</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
